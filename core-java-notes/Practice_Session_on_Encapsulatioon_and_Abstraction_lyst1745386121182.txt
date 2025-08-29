@@ -1,0 +1,62 @@
+									## Practice Session on Encapsulation and  Abstraction ##
+
+1. Employee Salary Management
+		Create a class Employee with:
+			A private field empId (int) representing the employee ID.
+			A private field empname (String) representing the employee name .
+			A private field salary (double) representing the salary.
+			A public getter method getEmpId() to retrieve the employee ID.
+			A public getter method getEmpname() to retrieve the employee name.
+			A public getter method getSalary() to retrieve the salary.
+			A public setter method setSalary(double amount) to update the salary Ensure the salary cannot be set to a negative value.
+		Task:
+			Create an Employee object.
+			Assign an empId, empname and an initial salary.
+			Display the employee's ID,  employee name  and salary.
+			Update the salary and display the updated salary.
+
+2. Notification System
+	Create an abstract class Notification with:
+	An abstract method void sendNotification(String message)
+	Create two subclasses:
+		EmailNotification – prints "Email sent: [message]"
+		SMSNotification – prints "SMS sent: [message]"
+	Task:
+		Create one object of each subclass.
+		Call sendNotification("Welcome!") for both.
+		Show polymorphism using Notification reference.
+
+ 3. Shape Area Calculator
+	Create an abstract class Shape with:
+	An abstract method double calculateArea()
+	A public method void displayArea() that prints the area (call calculateArea() inside)
+	Create two subclasses:
+		Circle with a radius field
+		Rectangle with length and breadth fields
+	Task:
+		Create objects of Circle and Rectangle, set values via constructor or methods.
+		Call displayArea() for both.
+		Use Shape as the reference type and observe abstraction.
+
+
+4. Online Product Ordering System – Encapsulation + Abstraction
+	Create an abstract class Product with:
+		A private field productName (String)
+		A private field price (double)
+		A constructor to initialize productName and price
+		A public getter for productName and price
+		A public setter for price, ensuring it cannot be negative
+		An abstract method void displayProductDetails()
+	Create two subclasses:
+		ElectronicsProduct
+			Has an additional field warrantyInYears (int)
+			Overrides displayProductDetails() to show product name, price, and warranty
+		ClothingProduct
+			Has an additional field size (String)
+			Overrides displayProductDetails() to show product name, price, and size
+	Task:
+		Create one object of each subclass: ElectronicsProduct and ClothingProduct
+		Set appropriate product details using constructor and setter
+		Try to set a negative price and ensure it is rejected
+		Call displayProductDetails() for each object
+		Use the Product reference type to store the objects and observe abstraction in action

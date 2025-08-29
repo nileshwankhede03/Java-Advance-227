@@ -1,0 +1,89 @@
+
+Questions on Overloading & Overriding :
+
+	
+1.Overload a method area() to calculate:
+
+Area of a circle
+
+Area of a rectangle
+
+Area of a square
+
+
+
+2.Create a Calculator class with overloaded add() methods:
+
+add(int, int)
+
+add(double, double)
+
+add(int, int, int)
+
+
+3.Overload a method named display() to:
+
+Display a string
+
+Display an integer
+
+Display a string and an integer together
+
+
+4.Write a program to overload a constructor in a Student class:
+
+Constructor 1: takes no arguments
+
+Constructor 2: takes roll number
+
+Constructor 3: takes roll number and name
+
+
+
+5.Create a BankAccount class with overloaded deposit() methods:
+
+deposit(int amount)
+
+deposit(int amount, String mode) (like "cash", "cheque")
+
+
+
+6.Create a superclass Animal with a method sound() and override it in:
+
+Subclass Dog → prints "Bark"
+
+Subclass Cat → prints "Meow"
+
+
+7.Create a class Vehicle with method move() and override it in:
+
+Car class → "Car is moving"
+
+Bike class → "Bike is moving"
+
+
+
+8.Create a class Shape with method draw() and override it in:
+
+Circle class
+
+Rectangle class
+
+Triangle class
+
+
+
+9.Create a base class Employee with method calculateSalary() and override it in:
+
+PermanentEmployee class
+
+ContractEmployee class
+
+
+
+10.Show runtime polymorphism by calling overridden methods using superclass reference for:
+
+Bird class with method fly()
+
+Subclasses Sparrow, Eagle
+

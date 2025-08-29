@@ -1,0 +1,25 @@
+
+
+String : 
+
+Practise Questions String : 
+
+Write a Java program to reverse a string.
+
+Write a Java program to check if a string is a palindrome.
+
+Write a Java program to count the number of vowels and consonants in a string.
+
+Write a Java program to remove all white spaces from a string.
+
+Write a Java program to count the number of words in a string.
+
+Write a Java program to convert a string to uppercase and lowercase.
+
+Write a Java program to replace all occurrences of a character with another.
+
+Write a Java program to find the length of a string without using .length().
+
+Write a Java program to compare two strings without using .equals() method.
+
+Write a Java program to find duplicate characters in a string.

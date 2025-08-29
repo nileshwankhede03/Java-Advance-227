@@ -1,0 +1,54 @@
+
+Methods : 
+
+1. Normal Method
+2. Parameterise method
+
+3. return type 
+4. parameterise with return type methods 
+
+
+
+
+Reference Code for all types method :
+
+
+ 
+
+package com.tka;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		myAdd();
+		mySub(30, 20);	
+		System.out.println("Mul..."+ myMul());
+		System.out.println("Div..."+ myDiv(21,2));
+	}
+
+	public static void myAdd() {
+		int a = 20, b = 50;
+		int c = a + b;
+		System.out.println("Sum " + c);
+	}
+
+	public static void mySub(int a, int b) {
+		int c = a - b;
+		System.out.println("Sub " + c);
+	}
+
+	public static int myMul() {
+		int a = 20, b = 20;
+		int c = a * b;
+		return c;
+	}
+
+	public static float myDiv(int a , int b) {
+		float c = (float) a/b;
+		return c;
+	}
+	
+
+}
+
+

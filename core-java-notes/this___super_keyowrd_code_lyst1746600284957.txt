@@ -1,0 +1,210 @@
+
+1) Outer class & Inner Static class code : 
+
+
+package com.tp;
+
+public class Outer {
+
+	public static class Inner {
+
+		public void m2() {
+			System.out.println("this is m2 method of Inner Class");
+		}
+
+	}
+
+	public static void m1() {
+		System.out.println("this is M1 method of Outer class");
+	}
+
+	public static void main(String[] args) {
+		Outer.m1();
+//		Inner.m2(); // suppose if we have static method in inner 
+//              class then it is directly call by inner class name
+		Outer.Inner oi = new Outer.Inner();
+		oi.m2();    // inner class non-static method calling 
+	}
+
+}
+
+
+
+
+
+2) This Keyword Code :
+
+ 
+2.1) for variable : 
+
+public class A {
+
+int ac;
+
+public void display(int ac){
+this.ac=ac;
+}
+public void m1(){
+System.out.println(ac);
+}
+public static void main(String args[]){
+A a = new A();
+a.display(20);
+a.m1();
+}
+}
+
+
+
+2.2) for Methods : 
+
+package com.tp;
+
+public class Demo {
+
+	public void display() {
+		System.out.println("this is display method");
+	}
+	public void show() {
+		  this.display();
+		System.out.println("this is show method");
+	}
+	public static void main(String[] args) {
+        Demo d = new Demo();
+//      d.display();
+        d.show();  // we can call single method and access the data of 
+//  display method also through the this keyword so need to call separately //display method    
+     }
+}
+
+
+2.3) for Constructor : 
+
+package com.tp;
+
+public class Demo {
+
+	protected Demo() {
+		System.out.println("this is non para.. cnstr..");
+	}
+	Demo(int a) {
+		this();   // at the time of contr calling through this() //keyword remember you write this in first line 
+
+		System.out.println("this is para..1 cnstr..");
+	}
+	Demo(int a,int b) {
+		this(1);
+		System.out.println("this is para..1.2 cnstr..");
+	}
+	Demo(int a,int b,int c) {
+		this(2,2);
+		System.out.println("this is para..1.3 cnstr..");
+	}
+	public static void main(String[] args) {
+		Demo d = new Demo(1,2,3);
+	}
+}
+
+
+
+3) Super Keyword : 
+
+3.1) for Variable : Task for You : 
+
+public class A {
+
+int a =34;
+
+}
+
+
+public class B {
+
+public void m1(){
+System.out.println(super.a);
+
+}
+
+public static void main(String args[]){
+  B b = new B();
+    b.m1();
+   }
+}
+
+
+3.2) for Methods : 
+
+package com.tp;
+
+public class Tp {
+
+	public void m1() {
+		System.out.println("this is m1 method of TP");
+	}
+	
+}
+
+
+
+package com.tp;
+
+public class Demo extends Tp {
+
+	@Override
+	public void m1() {
+		System.out.println("this is an m11 updated from m1 ");
+	}
+
+	void display() {
+		this.m1();
+		super.m1();
+	System.out.println("this is display method");
+	}
+
+	public static void main(String[] args) {
+		Demo d = new Demo();
+		d.display();
+	}
+
+}
+
+
+
+3.3) for Constructor : 
+
+
+package com.tp;
+
+public class Tp {
+
+	public Tp() {
+		System.out.println("this is cnstr of Tp");
+	}
+	public Tp(int a) {
+		this();
+		System.out.println("this is cnstr PAAA cosntr of Tp");
+	}
+	
+}
+
+
+package com.tp;
+
+public class Demo extends Tp {
+
+	Demo() {
+		super(1);
+		System.out.println("this is cnstr of Demo");
+	}
+
+	public static void main(String[] args) {
+		Demo d = new Demo();
+	}
+}
+
+
+
+
+
+
+ 

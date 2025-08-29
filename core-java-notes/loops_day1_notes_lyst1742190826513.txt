@@ -1,0 +1,28 @@
+practice Questions : 
+
+Print Numbers from 1 to 100
+Write a program that prints numbers from 1 to 100 using a for loop.
+
+Print Even Numbers from 2 to 100
+Print all even numbers from 2 to 100 using only a for loop.
+
+Sum of First N Natural Numbers
+Calculate and print the sum of the first N natural numbers using a for loop.
+
+Print a Multiplication Table
+Given a number N, print its multiplication table up to 10 using a for loop.
+
+Reverse Order Printing
+Print numbers from 100 to 1 in reverse order using a for loop.
+
+Factorial of a Number
+Find the factorial of a given number N using a for loop.
+
+Print the Fibonacci Series
+Print the first N terms of the Fibonacci series using a for loop.
+
+Sum of Digits of a Number
+Find the sum of the digits of a given number using only a for loop.
+
+Reverse a Number
+Reverse the digits of a number using only a for loop.

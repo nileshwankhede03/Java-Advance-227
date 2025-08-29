@@ -1,0 +1,29 @@
+package com.jbk;
+
+public class Addition {
+
+	public static void main(String[] args) {
+		int sum = myAdd(21, 30);
+		float avg = findAvg(sum);
+		findDis(avg);
+
+	}
+
+	public static int myAdd(int a, int b) {
+		int c = a + b;
+		System.out.println("Sum " + c);
+		return c;
+	}
+
+	public static float findAvg(int sum) {
+		float myAvg = (float) sum / 2;
+		System.out.println("Avg " + myAvg);
+		return myAvg;
+	}
+
+	public static void findDis(float avg) {
+		float myDis = avg % 10;
+		System.out.println("10 % Discount on AVG " + myDis);
+	}
+
+}

@@ -1,0 +1,30 @@
+Questions on Single & Multi-level Inheritance :
+
+
+Create classes:
+Person → Employee → Manager.
+Each class should have one method: displayPerson(), displayEmployee(), displayManager().
+
+Create classes:
+Shape → Polygon → Triangle.
+Add appropriate methods and demonstrate method calls from the lowest level object.
+
+Class Device has method powerOn().
+Inherit it in Computer which adds method boot().
+Further inherit in Laptop, adding method carry(). Demonstrate all methods.
+
+Class Vehicle → FourWheeler → Car.
+Add a method in each: move(), drive(), musicSystem(). Show method calls.
+
+Create class Animal with method eat(), then Mammal with walk(), then Human with think().
+Use object of Human to call all methods.
+
+Class Shape has method draw(). Inherit it in class Circle with an additional method area() to compute area using radius.
+
+Class Appliance has method turnOn(). Inherit it in class Fan with method rotate(). Call both methods.
+
+Class Book has method getTitle(). Class Novel extends Book and has method getGenre().
+
+Class Teacher with method teach(). Inherit in class MathTeacher with method solveEquations().
+
+Class Mobile has method call(). Class Smartphone inherits it and adds method browseInternet().

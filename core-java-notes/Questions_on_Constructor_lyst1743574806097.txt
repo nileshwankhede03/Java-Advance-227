@@ -1,0 +1,19 @@
+Create a Student class with a parameterized constructor to initialize name and age, then create an object and display the values.
+
+Define an Employee class with a parameterized constructor that accepts id, name, and salary. Print the employee details.
+
+Create a Product class with a parameterized constructor that initializes productId, productName, and price. Display the product details.
+
+Design a Book class with a parameterized constructor that sets title, author, and price. Create a book object and print its details.
+
+Write a Java program to create a Car class with a parameterized constructor to initialize brand, model, and price. Display car details.
+
+Create a Rectangle class with a parameterized constructor that takes length and width as parameters. Calculate and display the area.
+
+Design a Laptop class with a parameterized constructor to initialize brand, ram, and storage. Print the laptop details.
+
+Write a Java program to create a Movie class with a parameterized constructor for movieName, genre, and rating. Display movie details.
+
+Create a Mobile class with a parameterized constructor that initializes brand, model, and price. Display mobile details.
+
+Define a Circle class with a parameterized constructor that initializes the radius and calculates the area.

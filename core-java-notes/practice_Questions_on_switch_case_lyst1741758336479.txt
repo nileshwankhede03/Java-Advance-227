@@ -1,0 +1,15 @@
+Practice Questions on switch case : 
+
+Write a program that takes a color (Red, Yellow, Green) as input and prints the corresponding action (Stop, Slow Down, Go).
+
+Implement a menu-driven program where the user selects a recharge plan (1: Data Plan, 2: Talktime Plan, 3: SMS Pack) and displays the price accordingly.
+
+Take the class type (1: General, 2: Sleeper, 3: AC) as input and print the fare details for each class.
+
+Implement a game system where a user selects a difficulty level (1: Easy, 2: Medium, 3: Hard) and prints a message accordingly.
+
+Take a season (1: Summer, 2: Winter, 3: Rainy) as input and print the appropriate advisory message (Stay Hydrated, Wear Warm Clothes, Carry an Umbrella).
+
+Create a program where the user enters the number of wheels (2, 3, 4, 6) and displays the type of vehicle (Bike, Auto-Rickshaw, Car, Truck).
+
+

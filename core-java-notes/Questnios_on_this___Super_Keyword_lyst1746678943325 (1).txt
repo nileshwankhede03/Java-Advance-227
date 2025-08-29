@@ -1,0 +1,22 @@
+Practice Questions on this & Super Keywords in java : 
+
+
+Create a class Student with fields name and age. Use this keyword to initialize fields through a constructor when constructor parameters have the same name as class fields.
+
+Write a program where one constructor calls another constructor in the same class using this().
+
+Create a class Box with length, width, and height. Create a method to calculate volume. Use this to refer to the current object while setting values.
+
+Create a class A with a method display() that prints "Class A". Inherit class B from A and override display(). Use super to call the superclass method.
+
+Create two classes: Animal and Dog. Animal has a constructor that prints "Animal is created". Dog has a constructor that uses super to call the Animal constructor and then prints "Dog is created".
+
+Create a class Employee with a method show(). Create a subclass Manager that overrides show() and uses super.show() to call the parent version.
+
+Create a class with a method that accepts an object of the same class. Use this to pass the current object as an argument to that method.
+
+Create a class Product with a method returnThis() that returns the current class object using this. Call the method and show how chaining works.
+
+Create a superclass Shape with a method calculateArea(). Create a subclass Circle that overrides it. Use super to call the Shape version of calculateArea() from Circle.
+
+Demonstrate the difference between this and super when accessing variables with the same name in parent and child classes.

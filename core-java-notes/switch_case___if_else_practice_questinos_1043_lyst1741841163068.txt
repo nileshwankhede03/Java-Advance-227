@@ -1,0 +1,62 @@
+practice Questions on switch case & if else :
+
+
+Convert a Number (1-7) into a Weekday
+1 = Sunday, 2 = Monday, ..., 7 = Saturday.
+
+Convert a Grade into Remarks
+A = Excellent, B = Good, C = Average, D = Poor, F = Fail.
+
+Display the Zodiac Sign Based on Month and Date
+Enter month & day, print corresponding zodiac sign.
+
+Find the Number of Days in a Given Month and Year
+Consider leap years while checking February.
+
+Menu-Based Program for Arithmetic Operations
+Choose an operation (+, -, *, /) and perform it.
+
+Convert Temperature Between Celsius and Fahrenheit
+Use switch-case to select the conversion type.
+
+Find the Area of Different Shapes
+Choose from circle, rectangle, triangle, and find the area.
+
+Check if a Given Number is Odd or Even Using Switch
+Use modulo operation inside switch-case.
+
+Convert Currency (USD, INR, EUR)
+Take a currency and convert it to another using predefined rates.
+
+Find the Type of Quadrilateral
+Choose between square, rectangle, parallelogram, and classify it.
+
+Check if a Number is Prime
+Take a number and check if it is prime using if-else.
+
+Check if a Number is a Perfect Square
+Use if-else to verify if the square root of the number is an integer.
+Check if a Number is a Palindrome
+
+Reverse a number and check if it remains the same.
+Find the Smallest of Three Numbers
+
+Take three numbers and determine the smallest one.
+Check if a Number is an Armstrong Number
+
+Find if the sum of cubes of digits equals the number itself.
+Find the Sum of Digits of a Number
+
+Extract digits and sum them up using if-else.
+Check if a Character is an Alphabet
+
+Determine whether a given character is A-Z or a-z.
+Check if a Number is a Perfect Number
+
+Find the sum of divisors and check if it equals the number.
+Find the Maximum and Minimum in an Array
+
+Take an array and determine the highest and lowest values.
+Check if a Triangle is Right-Angled
+
+Use Pythagoras theorem to check if it forms a right-angled triangle.

@@ -1,0 +1,98 @@
+Todays Lecture Agenda : 
+
+Abstraction :
+
+Abstraction is the process of hiding the internal implementation details and showing only the essential/Needed information to the user.
+
+Example in Real Life:
+
+When you drive a car, you only need to know how to use the steering wheel, accelerator, and brakes. You don’t need to know how the engine works internally.
+
+We can achieved Abstraction by two ways:
+
+1. Interface :
+2. Abstract class :
+
+
+1. Interface :
+
+
+ Syntax : 
+
+public interface Demo {
+
+// java 7 : we can write only Abstract Method in interface but in updated version 8 // it // will be changeable in upcoming sessions
+
+   public abstract void m1();  // this is abstract method 
+
+}
+
+
+Example code : 
+
+
+package com.abstraction;
+
+public interface Demo {
+
+	// only we can write abstract method
+	
+	public abstract void m1();   // implicitly public abstract 
+		
+}
+
+
+
+
+
+package com.abstraction;
+
+public class ImplDemo implements Demo {
+
+	@Override
+	public void m1() {
+		
+		System.out.println("ATM backend Operation....");
+		
+	}
+	
+	public static void main(String[] args) {
+		ImplDemo d = new ImplDemo();
+		d.m1();
+	}
+}
+
+
+Abstract Method  : does not contains Body 
+Concreate Method : it contains Body
+
+
+IMP Key Points : 
+
+1. we can write only abstract methods in interfaces
+2. in class we can not write abstract method but we write concreate methods
+3. suppose if we create any interface and it contains any abstract method then you should need to create an class and implements the interface and override this method and gives implementation(means Body) and create object of this class and run logic.
+4. we can't create object of interface and abstract class but we create reference.
+5. we can't write any concreate method / constructor in interface class 
+6. in interface all variables are always public static final.
+7. we can't make interface as final. 
+
+
+
+Practice Questions on Interface : 
+
+1. Create an one Interface Bank , it contains abstract makePayment() method. create one class SbiBank implements this to Bank interface. and write logic for this method.
+
+2. 1. Create an one Interface OnlinePayment , it contains abstract makePayment() method. create two classes PhonePay and GooglePay implements this to Bank interface. and write logic for this method. 
+
+3. Create an interface Animal with a abstract method sound() & Color(). Implement this interface in classes Dog, Cat, and Cow, each printing its own sound & Color.
+ 
+
+
+
+    
+
+
+
+
+

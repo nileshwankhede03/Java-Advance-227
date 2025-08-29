@@ -1,0 +1,115 @@
+Last Lecture Agenda :
+
+Variable : 
+
+Naming Conventions : 
+
+Rules : 
+
+Variable Meaningful
+a-z A-Z , 0-9, $ _ 
+variables can be reassign 
+
+
+int a =3;
+
+System.out.println(a/3);
+
+
+Todays Lecture Agenda :
+
+Type Casting : 
+
+
+//  TypeCasting 
+		
+		// it has two types
+		
+//		1) Implicit 
+//             2) Explicit
+		
+		 int val = 30;	 
+		 long num = val;
+		 
+		 System.out.println(num);
+
+
+
+
+Operators : 
+
+
+Operator  :   Doctor        // who operates
+Operation :   Surgery       // Task/ Action
+Operands  :   patients      // object
+
+
+Types Operator : 
+
+Arithmetic Operator 
+Relational / Comparison 
+Assignment 
+Logical 
+bitwise
+Increment/ Decrement 
+Mics 
+
+
+
+1. Arithmetic Operator : 
+
++   
+-
+*
+/    = Quotient
+%    = Remainder
+
+
+2. Relational / Comparison :   return = Boolean (true/false)
+
+>        greater than
+<        less than
+>=       greater than equals to 
+<=       less than equals to 
+==       equals equals to
+!=       Not Equals to
+
+
+                System.out.println(20<21);  // true
+		System.out.println(20>21);  // false
+		System.out.println(20>=21);  // false
+		System.out.println(20<=21);  // true
+		System.out.println(21 == 21);  // true
+		System.out.println(21 != 21);  // false
+
+
+
+Assignment Operator : (left to right) 
+
+=     assign value
++=    add value 
+-=    sub value
+*=    mul value
+/=    divide value
+%=    mod value
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+Create a University class with instance variables universityName, location, numStudents, numProfessors, ranking , foundingYear, department and graduationLevel . Create at least two objects, assign values, and display their details.
+
+Create a Sports class with instance variables sportName, teamName, sportType, coachName, numPlayers, homeCity, and championshipsWon. Create at least two objects, assign values, and display their details.
+
+Create a Flight class with instance variables flightNumber, airline, departureCity, destinationCity, departureTime, and ticketPrice. Create at least two objects, assign values, and display their details.
+
+Create a Movie class with instance variables title, director, releaseYear, lead actor, lead actress, duration, genre, and rating. Create at least two objects, assign values, and print their details.
+
+Create an Employee class with instance variables empId, name, age, address, email, mob_no, gender, Department and salary. Assign values to two objects and print their details.

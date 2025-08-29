@@ -1,0 +1,171 @@
+
+Argument / Parameterised Constructor :
+
+
+public class Demo{
+}
+
+Syntax : 
+
+Access specifier Demo (parameters) {
+n no line of code : 
+}
+
+
+
+
+Code :
+
+package com.jbk;
+
+public class Employee {
+
+	int empID; // fields // variable
+	String empName;
+	String experience;
+
+	public Employee(int empID, String empName, String experience) {
+		this.empID = empID;
+		this.empName = empName;
+		this.experience = experience;
+	}
+
+}
+
+
+
+
+
+package com.jbk;
+
+public class EmployeeInfo {
+
+	public static void main(String[] args) {
+		Employee e = new Employee(1,"rahul", "7yr");
+		System.out.println(e.empID);
+		System.out.println(e.empName);
+		System.out.println(e.experience);
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+package com.jbk;
+
+public class Dog {
+
+//	Access specifier Demo (parameters) {
+//		n no line of code : 
+//		}
+
+//	public Dog(String name, String color) {
+//		System.out.println("Dog name is "+name);
+//		System.out.println("Dog clr is "+color);
+//	}
+
+//	public Dog() {
+//		int a = 21;
+//		for (int i = 1; i <= 10; i++) {
+//			int output = a * i;
+//			System.out.println(output);
+//		}
+//	}
+//
+//	public Dog(int a) {
+//		for (int i = 1; i <= 10; i++) {
+//			int output = a * i;
+//			System.out.println(output);
+//		}
+//	}
+	
+//	private Dog() {
+//		System.out.println("this is private Constructor...");
+//	}
+//	
+//	public static void main(String[] args) {
+//		Dog d = new Dog();
+//	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+package com.jbk;
+
+public class DogInfo {
+
+	public static void main(String[] args) {
+	 
+//		Dog d = new Dog("Bruno","white");	
+//		System.out.println("----------");
+//		Dog d1 = new Dog("Rocky","black");	
+//		System.out.println("----------");
+//		Dog d2 = new Dog("Tommy","white");
+//		System.out.println("----------");
+//		Dog d3 = new Dog("Sheru","black");	
+		
+		
+//		System.out.println("Table of 21");
+//		Dog d = new Dog(21);
+//		System.out.println("Table of 31 ");
+//		Dog d1 = new Dog(31);
+//		System.out.println("Table of 27");
+//		Dog d2 = new Dog(27);
+		
+		
+//		Dog d = new Dog(); we can not create the object of Dog class bcz this class constructor is PRIVATE
+		
+		
+		
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+

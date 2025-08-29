@@ -1,0 +1,93 @@
+Todays Lecture Agenda : 
+
+OOPs (Object Oriented Programming) : 
+
+Class 
+Objects 
+
+Encapsulation : binding / wrapping of data into single unit
+
+Example : capsule 
+
+int a = 30;
+
+
+Access specifier : public , private , protected , default
+
+
+how we can achieved the Encapsulation : 
+
+1 . make the variable of the class as private
+2 . create the public getter or setter methods of this variables
+
+
+
+Account Class : 
+
+
+package com.encapsulation;
+
+public class Account {
+
+	private int accNo;
+	private String accHldName;
+	private double balance;
+
+	public int getAccNo() { // int b = a.getAccNo();
+		return accNo; // 24
+	}
+
+	public void setAccNo(int accNo) {
+		this.accNo = accNo;
+	}
+
+	public String getAccHldName() {
+		return accHldName;
+	}
+
+	public void setAccHldName(String accHldName) {
+		this.accHldName = accHldName;
+	}
+
+	public double getBalance() {
+		return balance;
+	}
+
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+
+}
+
+
+
+Bank Class : 
+
+
+
+package com.encapsulation;
+
+public class Bank {
+
+	public static void main(String[] args) {
+		Account a = new Account();
+		System.out.println(a.getAccNo()); // getter
+		a.setAccNo(30);
+		a.setAccHldName("rahul");
+		a.setBalance(400000);
+		System.out.println(a.getAccNo());
+		System.out.println(a.getAccHldName());
+		System.out.println(a.getBalance());
+
+	}
+}
+
+
+
+
+
+
+
+
+
+

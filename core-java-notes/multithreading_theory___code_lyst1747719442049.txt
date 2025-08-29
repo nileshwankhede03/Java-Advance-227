@@ -1,0 +1,136 @@
+Todays Lecture Agenda : 
+
+
+Multithreading  :
+
+Multithreading is a process to execute multiple threads at the same time without dependency of other thread are called as multithreading.
+
+Multithreading in Java is the process to run multiple parts of a program (called threads) at the same time to perform tasks faster and more efficiently.
+ 
+Thread : Thread means small piece of code is called as thread and also it is an class in java. which is present in java.lang  package.
+
+	
+
+we can achieved Multithreading by two ways : 
+
+1) Thread class 
+2) Runnable Interface 
+
+note : by using thread class we can achieved multithreading for classes. 
+       by using Runnable interfaces we can achieved multithreading for interfaces.
+
+
+
+
+  
+
+To create an big project in java  : 
+
+1) divide that project into thread
+2) allocate some task to each thread -> run() method
+3) run all threads together/simultaneously.
+
+
+
+Zoom - Program : 
+
+small piece of code / threads / sub parts 
+
+Chats  
+video 
+Recording 
+Sharing 
+audio 
+participants
+Annotate
+
+
+
+
+
+
+Home : 
+
+Threads : 
+
+SongPlay extends Thread 
+Downloading extends Thread 
+
+
+ 
+
+
+
+
+
+
+
+package com.tka;
+
+public class SongPlay extends Thread {
+
+	@Override
+	public void run() {
+		
+		for(int i=0;i<=10;i++) {
+			System.out.println("SongPlay..."+i);
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		
+	}
+	
+}
+
+
+
+
+
+
+
+package com.tka;
+
+public class Download implements Runnable {
+
+	@Override
+	public void run() {
+
+		for (int i = 0; i <= 10; i++) {
+			System.out.println("DownLoad..." + i);
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+
+	}
+}
+
+
+
+
+
+package com.tka;
+
+public class Home {
+
+	public static void main(String[] args) {
+		SongPlay sp = new SongPlay();
+		Download d = new Download();
+		sp.start();
+		
+		Thread t = new Thread(d);
+    	t.start();
+		
+	}
+}
+
+
+
+
+

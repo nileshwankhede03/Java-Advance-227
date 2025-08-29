@@ -1,0 +1,42 @@
+Practice Questions on Throw & Throws Keywords : 
+
+Write a program that throws an ArithmeticException when dividing a number by zero.
+
+Use throw to manually throw the exception if the divisor is 0.
+
+Create a method validateAge(int age) that throws an IllegalArgumentException if the age is less than 18.
+
+Use throw to raise the exception inside the method.
+
+Write a method that reads a number and throws a NumberFormatException if the input is not a valid number.
+
+Use throws in the method declaration and throw inside the method if parsing fails.
+
+Define a method checkPassword(String password) that throws a custom exception WeakPasswordException if the password is less than 6 characters.
+
+Create your own exception class extending Exception.
+
+Write a method that opens a file using FileReader and declare throws IOException.
+
+The file name should be passed as a parameter, and you must handle the exception in the calling method.
+
+Create a calculator method that throws ArithmeticException using throw if someone tries to compute the square root of a negative number.
+
+Use throw inside sqrt(int number) method.
+
+Write a program that accepts user input for marks. If marks > 100 or < 0, throw an IllegalArgumentException.
+
+Use throw with appropriate error message.
+
+Create a method withdraw(int amount) in a Bank class that throws an InsufficientBalanceException if the balance is less than amount.
+
+Create and use a custom checked exception class.
+
+Demonstrate how throws works by chaining multiple exceptions (IOException, SQLException) in a method declaration.
+
+Use a dummy method to simulate both exceptions (no actual DB/file required).
+
+Create a method readArray(int[] arr, int index) that throws ArrayIndexOutOfBoundsException using throw if index is invalid.
+
+Manually check bounds and throw exception instead of letting Java throw it implicitly.
+

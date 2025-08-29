@@ -1,0 +1,143 @@
+Last Lecture Agenda : 
+
+   =   = Assign the value
+  ==   = Compare two Value/Variable
+
+
+	Logical Operators : && , || , ! , ^
+
+Todays Lecture Agenda :
+
+if-else Versions : 
+
+
+
+
+1. if
+
+syntax :      if(condition){
+                 
+               }
+
+Example : 
+
+
+                int num = 3;
+
+		if (num == 3) {   // true
+	         System.out.println("Hii");
+		} 
+
+
+
+2. if-else 
+
+syntax :      if(condition) {
+                 
+               } else {
+                
+               }
+
+Example : 
+
+                int num = 3;
+
+		if (num == 6) {
+			System.out.println("Hii");
+		} else {
+			System.out.println("hello");
+		}
+
+
+
+
+3. if-else ladder : 
+
+syntax :                  
+
+if(condition 1){
+
+}
+else if( condition 2){
+
+}
+.
+.
+.
+else{
+
+}
+
+
+Example :    
+
+                int num = 3;
+
+		if (num == 6) {
+			System.out.println("Hii");
+		} else if (num > 45) {
+			System.out.println("hello");
+		} else if (num == 4) {
+			System.out.println("Bye");
+		} else {
+			System.out.println("GM");
+		}
+
+
+
+4. nested if-else : 
+
+
+syntax : 
+
+if(condition 1){
+
+if(condition 2){
+  
+}else if(){
+
+}else{
+
+}
+}
+
+
+Example : 
+
+
+int num = 3;
+
+		if (num != 3) {
+			System.out.println("Line A");
+			if (num >= 2) {
+			System.out.println("Line B");
+			} else if (num == 5) {
+			System.out.println("Line C");
+			}
+		        } else {
+			System.out.println("line X");
+		        }
+	                }
+
+
+
+
+5. if with multiple condition  
+  
+                int num = 3;
+
+		if (num != 3 && num >= 2 || num != 4) {
+			System.out.println("line A");
+		} else {
+			System.out.println("Line B");
+		}
+	        }
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+Last Lecture Agenda : 
+
+
+JDBC API : 
+
+What are the key Components of jdbc : 
+ 
+DriverManager(C)
+Connection(I)
+Statement(I)
+PrepareStatement(I)
+ResultSet(I)
+
+
+JDBC steps : 
+
+
+
+1) firstly we need to add the jar (MySQL connector 8)
+2) Register & Load Driver Class (com.mysql.cj.jdbc)
+3) get JDBC Connection 
+4) jdbc Statement  (Statement / PrepareStatment)
+5) Execute the Query (execute/executeUpdate/executeQuery)
+6) Close all the Connection
+
+
+
+
+executeUpdate(); return type = int , DML(Data manipulation Language),(insert , update , delete);
+
+executeQuery(); return type = ResultSet, DQL(Data Query Language),(SELECT);
+
+execute(); return type = Boolean , DDL(Data Definition Language),(Create,Alter,Drop,Truncate) 
+
+
+
+
+
+Class.forName("com.mysql.cj.jbc.Driver");
+Connection   c = DriverManager.getConnection("jdbc:mysql://localhost:3306/useSSL=false","root","root");
+Statement  s= c.createStatemeent();
+s.executeUpdate("delete from student where  studID =102");
+c.close();
+
+
+
+
+(Homework) : 
+
+Employee 
+Library 
+Hospital 
+
+Modular Approach : 
+
+Controller         Calling Functionality - it contains main method
+Dao                Database Connection Code (Data Access Objects/Layer) 
+Service            Business Logic
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

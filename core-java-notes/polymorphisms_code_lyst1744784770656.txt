@@ -1,0 +1,122 @@
+Overloading Code : 
+
+
+package com.polymorphism;
+
+public class Car {
+
+         // same method name , within same class , with diff parameters 
+ 
+	public void carInfo(String name, int carAge) {
+                 syso("-----") 
+	}
+
+	public void carInfo(int carAge, String name) {
+                  syso("-----") 
+	}
+
+public static void main() {
+		System.out.println("copy of main method ");
+	}
+	
+
+
+
+public static void main(String[] args) {
+		
+		System.out.println("Real main method");
+//		Car c= new Car();
+		Car.main();
+//		c.main(args);
+		
+//		c.carInfo(12, "BMW");
+//		c.carInfo("Dzire", 10);
+//		c.carInfo("Alto", 11);		
+		
+	}
+
+
+
+
+
+
+Constructor Overloading/(Constructor Chaining) :
+
+package com.polymorphism;
+
+public class Person {
+
+	public Person() {
+		System.out.println("No Args Cont.. 1");
+	}
+
+	public Person(int a) {
+		System.out.println("No Args Cont.. 2");
+	}
+
+	public Person(int a, int b) {
+		System.out.println("No Args Cont.. 3");
+	}
+
+	public Person(String a, float b) {
+		System.out.println("No Args Cont.. 4");
+	}
+
+	public static void main(String[] args) {
+		Person p = new Person();
+		Person p1 = new Person(1);
+		Person p2 = new Person(22, 1);
+		Person p3 = new Person("ASDF", 0.1f);
+	}
+
+}
+
+
+
+
+
+
+
+
+Overriding Code : 
+
+
+package com.polymorphism;
+
+public class Father {
+
+	public void bike() {
+		System.out.println("splender");
+	}
+
+}
+
+package com.polymorphism;
+
+public class Son extends Father {
+
+
+// override Annotation indicates this method can be override from parent class
+
+	@Override
+	public void bike() {
+		System.out.println("Ninja");
+		}
+	
+	public static void main(String[] args) {
+		Son s = new Son();
+		s.bike();
+
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+

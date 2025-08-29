@@ -1,0 +1,137 @@
+
+Todays Lecture Agenda :
+
+syntax for inheritance : 
+
+public class Dog extends Animal
+{
+
+}
+
+
+note : Inheritance is also called as IS-A Relationalship
+
+Examples : 
+
+Dog IS-A Animal 
+Sparrow IS-A Bird
+Car IS-A Vehicle
+
+
+
+
+ 1. Types of Inheritance :
+
+1.Single / Simple  
+
+Definition : in single inheritance there will be only one super class and one child class
+
+syntax : 
+
+public class Car extends Vehicle
+{
+
+}
+
+
+
+
+
+
+2.Multi-Level : Grandpa --> Father --> Son(You)   (Son extends Father , Father extends Grandfather)
+
+Definition : when a class extends a class and that class extends another class this is called as multi-level Inheritance  (A -> B -> C -> D , .........)
+
+refer this code : 
+
+
+package com.inheritance;
+
+public class GrandFather {   // parent class or Super class
+
+	String p = "50CR";
+	
+	public void  g1Property() {
+		System.out.println("GrandFather Property...."+ p);
+	}
+	
+}
+
+
+
+package com.inheritance;
+
+public class Father extends GrandFather { // sub class or child class
+
+	String p1 = "10CR";
+
+	public void f1Property() {
+		System.out.println("Fathers Property.. " + p1);
+	}
+
+}
+
+
+package com.inheritance;
+
+public class Son extends Father {
+
+	public void s1property() {
+		System.out.println("Son property.. 10 lakhs ");
+	}
+	
+	public static void main(String[] args) {
+		
+		Son s = new Son();
+		s.g1Property();
+		s.f1Property();
+		s.s1property();
+		
+	}
+
+}
+
+
+
+3.Multiple : Son -> Father & Mother (A -> B,C)
+
+Definition : in multiple inheritance. one class and has many parent classes. it can be achieved through the interfaces
+
+Note : it is not Possible through the Classes. we can achieved through the interfaces.
+
+ 
+
+
+Summary and Interview Questions : 
+
+
+Q - Which one is the parent class of all the classes ?
+A - Object class is the parent class of all the classes.
+
+
+Q - why inheritance ?
+A - 1. It provides the important features Reusability.
+    2. also it is helps to achieved the Run-time Polymorphisms (Overriding)
+
+Q - why multiple inheritance is not possible in java by using class name ?
+A - multiple inheritance is not possible in java, because its shows the Ambiguity Problem.
+for Example - there are three classes A,B,C.
+              Class A extends B,C at time. 
+              Suppose Class B & C contains same method and we try to called this in A class by using object creations at that time compiler will get confuse which class of method want to called B or C. suppose if forcefully called then it occurred Ambiguity problem.
+  
+What is IS-A RelationalShip ?
+
+what is Tight coupling in java ?
+A - Tight Coupling means One class is dependent on the another class.
+
+Disadvantage of Inheritance ?
+A - One class is dependent on the another class. because of this we can create tight couple applications.
+
+
+
+4.Hierarchical
+5.Hybrid
+
+
+
+

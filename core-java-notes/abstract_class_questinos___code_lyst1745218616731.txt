@@ -1,0 +1,244 @@
+Concrete class : 
+
+Methods
+constructor
+variables 
+
+Object creation: 
+
+
+Interface : 
+
+only abstract methods 
+
+
+Abstract class : 
+
+abstract method
+concreate method(non-abstract method) {}
+Constructor 
+variables
+
+
+
+
+
+code : 
+
+
+package com.abstractclass;
+
+public abstract class Demo 
+{
+
+	public Demo() {
+		System.out.println("this is constructor of Demo class");
+	}
+
+	public abstract void m1();
+
+	public void m2() 
+	{
+		System.out.println("this is non - abstract method m2");
+	}
+
+}
+
+
+
+
+
+
+
+package com.abstractclass;
+
+public class Demo2 extends Demo {
+
+	Demo2() {
+		System.out.println("this is cntrs Demo2 class");
+	}
+
+	@Override
+	public void m1() {
+		System.out.println("this is abstract method of Demo class m1");
+	}
+
+	public static void main(String[] args) {
+		Demo2 d = new Demo2();	
+		d.m1();
+		d.m2();
+		
+		
+		// by using ref used parent class name and call constr of child class
+//		Demo d = new Demo2(); Dynamic Dispatch : Allowed
+//		Demo2 d = new Demo(); Not allowed 
+		
+
+	}
+
+}
+
+
+
+
+what is Marker interface ? 
+= Empty interface is called as marker interface.
+example : Serializable , cloneable etc...
+
+What is Functional Interface ?
+= it contains only the single abstract methods 
+Example : Runnable and Comparable etc...
+
+
+
+
+
+
+
+
+Practice Questions on Abstract classes : 
+
+
+
+ Abstract Class (Questions 1–7) : 
+
+
+
+Shape Area Calculator
+Create an abstract class Shape with an abstract method calculateArea(). Implement it in Circle and Rectangle.
+
+Employee Salary
+Abstract class Employee with calculateSalary() as abstract. Implement for FullTimeEmployee and PartTimeEmployee.
+
+Bank Account Interest
+Abstract class BankAccount with methods deposit(), withdraw() and an abstract method calculateInterest().
+
+Animal Sounds
+Abstract class Animal with makeSound() as abstract. Implement it in Dog, Cat, and Cow.
+
+Vehicle Movement
+Abstract class Vehicle with an abstract method move(). Extend it in Bike and Truck.
+
+Appliance Power Use
+Abstract class Appliance with method powerConsumption() abstract. Extend in Fan and Heater.
+
+Person Details
+Abstract class Person with method displayDetails() as abstract. Extend it in Student and Teacher.
+
+
+
+Interface (Questions 8–14)
+Playable Game
+Interface Playable with method play(). Implement in Football, Basketball, and Hockey.
+
+Remote Device
+Interface RemoteControl with turnOn() and turnOff(). Implement in TV and Fan.
+
+Multiple Interface Implementation
+Interface Printable and Showable. Class Document implements both and defines both methods.
+
+Bank Interface
+Interface Bank with method getRateOfInterest(). Implement it in SBI, HDFC, and ICICI.
+
+Flyable Interface
+Interface Flyable with method fly(). Implement in Bird and Airplane.
+
+Shape Drawing
+Interface Drawable with draw(). Implement in Circle, Square, and Triangle.
+
+Device Charging
+Interface Chargeable with method charge(). Implement in Mobile and Laptop.
+
+
+
+Device Example
+
+Interface: Operatable → method operate()
+
+Abstract Class: ElectronicDevice implements Operatable
+
+Concrete Class: WashingMachine extends ElectronicDevice and overrides operate()
+
+Shape Hierarchy
+
+Interface: Drawable → method draw()
+
+Abstract Class: Shape implements Drawable, has abstract method area()
+
+Class: Rectangle extends Shape, implements both methods
+
+Payment System
+
+Interface: Payable → method makePayment()
+
+Abstract Class: Payment implements Payable
+
+Class: CreditCardPayment extends Payment, overrides makePayment()
+
+Transportation System
+
+Interface: Movable → method move()
+
+Abstract Class: Transport implements Movable, has abstract method capacity()
+
+Class: Bus extends Transport
+
+Employee Hierarchy
+
+Interface: SalaryCalculable
+
+Abstract Class: Employee implements SalaryCalculable, has abstract method getDetails()
+
+Class: Manager extends Employee
+
+Notification System
+
+Interface: Notifiable
+
+Abstract Class: Message implements Notifiable
+
+Class: EmailMessage, SMSMessage extend Message
+
+Appliance Example
+
+Interface: Switchable → turnOn(), turnOff()
+
+Abstract Class: Appliance implements Switchable
+
+Class: Refrigerator extends Appliance
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

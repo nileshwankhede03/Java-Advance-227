@@ -1,0 +1,73 @@
+
+Inheritance - Day1 :
+
+
+Definition of Inheritance :
+
+child/sub class class acquire all the properties of parent/super class :
+
+
+
+refer this code : 
+
+
+1. GrandFather :
+
+
+package com.inheritance;
+
+public class GrandFather {   // parent class or Super class
+
+	String p = "50CR";
+	
+	public void  g1Property() {
+		System.out.println("GrandFather Property...."+ p);
+	}
+	
+}
+
+
+2. Father : 
+
+
+package com.inheritance;
+
+public class Father extends GrandFather { // sub class or child class
+
+	String p1 = "10CR";
+
+	public void f1Property() {
+		System.out.println("Fathers Property.. " + p1);
+	}
+
+}
+
+
+
+
+3. Family : 
+
+
+package com.inheritance;
+
+public class Falimy {
+
+	public static void main(String[] args) {
+
+		Father f = new Father();
+
+//		f.p        // variables 
+//		f.p1
+		
+		f.f1Property();
+		f.g1Property();
+
+	}
+
+}
+
+
+
+
+
+

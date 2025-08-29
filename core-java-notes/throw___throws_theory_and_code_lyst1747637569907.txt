@@ -1,0 +1,126 @@
+Last Lecture Agenda : 
+
+Exception Handling :
+
+Todays Lecture Agenda : 
+
+throw & throws keywords : 
+
+throws : 
+
+1) the throws keyword in java is used to declared exceptions.
+2) it can be write in an method definition or signature.
+3) the throws Keyword is used to declared the both checked & unchecked Exceptions 
+4) the throws keyword can allowed for multiple Exception. 
+
+
+throw : 
+
+1) it is used to create an custom exception in java 
+2) it can be write inside an method
+3) the throw keyword can only propagates unchecked exception 
+4) the throw keyword can only throw an single exception 
+
+
+refer this code : 
+
+
+throws keyword : 
+
+package com.exceptionpractise;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class Home {
+
+	public void m1() throws ClassNotFoundException {
+		Class.forName("java.lang.String");
+	}
+	
+	public void m2() throws FileNotFoundException {
+		FileInputStream fs = new FileInputStream("d/abc.txt");
+	}
+	
+}
+
+
+
+
+
+
+package com.exceptionpractise;
+
+import java.io.FileNotFoundException;
+
+public class MainHome {
+
+	public static void main(String[] args) throws FileNotFoundException, ClassNotFoundException {
+		Home h = new Home();
+//		try {
+//h.m1();
+//		} catch (ClassNotFoundException e) {
+//			System.out.println("this is not Found");
+////			e.printStackTrace();
+//		}
+		
+		h.m1();
+		h.m2();
+	}
+	
+}
+
+
+
+
+
+throw keyword : 
+
+
+
+
+package com.exceptionpractise;
+
+public class CustomException extends RuntimeException {
+
+	public CustomException(String msg) {
+		super(msg);
+	}
+	
+	public static void main(String[] args) {
+		throw new CustomException("this is not allowed in java");
+	}
+//	
+	
+}
+
+
+
+
+also refer this code : 
+
+
+
+public class CustomException extends Exception {
+	public CustomException(String msg) {
+		super(msg);
+	}
+
+}
+
+
+
+
+public class Test {
+    public static void main(String[] args) {
+        try {
+            throw new CustomException("Custom error occurred");
+        } catch (CustomException e) {
+            System.out.println(e.getMessage());  // Output: Custom error occurred
+        }
+    }
+
+}
+
+
+

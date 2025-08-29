@@ -1,0 +1,12 @@
+
+ Practice Questions : 
+
+
+ Check if a number is Prime or Composite using for loop and if-else
+ check vowels and consonants using switch case and for loop
+ Reverse a number using while loop and check if even or odd
+ Find the sum of digits using do-while loop and check if prime
+ Check if a number is a palindrome, but if the number is less than 500, print "Invalid Input".
+ Print the Fibonacci series up to N terms, but if a number in the series is prime, stop the loop.
+ Check if a given year is a leap year or not using if-else.
+ Check if a number is a Perfect Square, but if the number is less than 100, print "Invalid Input".

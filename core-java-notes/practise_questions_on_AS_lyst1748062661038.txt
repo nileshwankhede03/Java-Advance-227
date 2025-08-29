@@ -1,0 +1,121 @@
+Practise Session : Array & String : 
+
+1) Sort the array without using sort method.
+
+2) find largest element in array.
+
+3) find smallest element in array.
+
+4) find second largest element in array.
+
+5) find second smallest element in array.
+
+6) Take an one password from the user like as : Rahul@12345 
+   separately printed on the console like as :
+
+ Rahul is characters 
+ @ is special symbol 
+ 12345 this is an Integer 
+
+7) WAP to Create array of cars where car is user-defined class.
+Car class has variables such as name color mileage and price. Accept details of 3 cars and store in the array. print the car name with highest mileage.
+
+8) WAP to accept 5 fruits names and store in an array. Create 2 more arrays say a and b. Let array a have all the vowels of all fruits names and b should contain all the consonants of all fruit names.
+
+
+
+
+
+
+classes & Interfaces : 
+
+List 
+Set 
+Map 
+
+Arraylist
+vector 
+linkedlist
+
+hashset 
+treeset
+linkedhashset
+
+
+Queue
+
+HashMap
+treemap 
+linkedhashmap 
+HashTable
+
+
+refer this code of POJO class : 
+
+
+
+package com.serialization;
+
+public class Students {
+
+	// POJO : Plane Old Java Objects
+
+	int stud_id;
+	String stud_name;
+	String city;
+	int age;
+
+	public Students() {
+
+	}
+
+	public Students(int stud_id, String stud_name, String city, int age) {
+		this.stud_id = stud_id;
+		this.stud_name = stud_name;
+		this.city = city;
+		this.age = age;
+	}
+
+	public int getStud_id() {
+		return stud_id;
+	}
+
+	public void setStud_id(int stud_id) {
+		this.stud_id = stud_id;
+	}
+
+	public String getStud_name() {
+		return stud_name;
+	}
+
+	public void setStud_name(String stud_name) {
+		this.stud_name = stud_name;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	@Override
+	public String toString() {
+		return "Students [stud_id=" + stud_id + ", stud_name=" + stud_name + ", city=" + city + ", age=" + age + "]";
+	}
+
+}
+
+
+
+
+

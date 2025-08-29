@@ -1,0 +1,55 @@
+Todays Lecture Agenda : 
+
+Abstraction :
+
+Abstraction is the process of hiding the internal implementation details and showing only the essential/Needed information to the user.
+
+Example in Real Life:
+
+When you drive a car, you only need to know how to use the steering wheel, accelerator, and brakes. You don’t need to know how the engine works internally.
+
+We can achieved Abstraction by two ways:
+
+1. Interface : (by using interface we can achieved 100% abstraction)
+2. Abstract class :
+
+
+1. Interface :
+
+ Syntax : 
+
+public interface Demo 
+{
+
+// java 7 : we can write only Abstract Method in interface but in updated version 8 // it // will be changeable in upcoming sessions
+
+   public abstract void m1();  // this is abstract method 
+
+}
+
+
+Note IMP :
+
+All methods in an interface are public and abstract by default (Java 7 and earlier).
+
+All variables declared in an interface are implicitly:
+**public**
+**static**
+**final**
+
+Example : public static final int max =123;
+
+So they are constants — shared by all classes and cannot be changed.
+
+
+IMP note : We cannot create the object of interface and abstract class. but we create an Reference.
+
+Advantages of abstractions : 
+
+It helps to reduce complexity and increase efficiency.
+It’s a fundamental OOP concept that improves maintainability and scalability of applications.
+To hide complexity.
+To improve code readability and reusability
+
+
+

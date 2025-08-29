@@ -1,0 +1,16 @@
+Practice Questions on method : 
+
+
+Write a method that prints "Hello, World!" when called. Call the method using the class name.
+Write a method that takes two integers as parameters and prints their sum. Call the method using the class name.
+Write a method that takes an integer as a parameter and prints whether it is even or odd. Call the method using the class name.
+Write a method that takes an integer and prints its multiplication table up to 10. Call the method using the class name.
+Write a method that takes two numbers as parameters and swaps them without returning anything. Call the method using the class name.
+Write a method that takes an integer N and prints numbers from 1 to N. Call the method using the class name.
+Write a method that takes an integer as a parameter and prints whether it is positive, negative, or zero. Call the method using the class name.
+Write a method that takes an integer N and prints natural numbers from N to 1. Call the method using the class name.
+Write a method that takes an integer and prints its square. Call the method using the class name.
+Write a method that takes an integer and prints its cube. Call the method using the class name.
+Write a method that takes an integer and prints its reverse. Call the method using the class name.
+Write a method that takes a character and prints its ASCII value. Call the method using the class name.
+Write a method that takes a character and prints whether it is a vowel or consonant. Call the method using the class name.

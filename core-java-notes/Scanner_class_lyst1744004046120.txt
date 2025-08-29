@@ -1,0 +1,74 @@
+Todays Lecture Agenda : 
+
+
+Scanner Class :  
+
+suppose if want to take an input from the user then we used Scanner class. it is also an class present in java.util package. it provides lots of methods such as next(), nextLine(), nextInt()....
+
+note : nextChar();  Not Found :     
+ char Grade = next().chatAt(0);
+
+
+syntax : 
+
+Scanner sc = new Scanner(System.in);
+syso(msg);
+sc.nextInt();   // it store an value which one pass the user
+
+ 
+
+
+Student.java  code :  
+
+package com.scannerex;
+
+import java.util.Scanner;
+
+public class Student {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+//		System.out.println("Enter ur String");
+//		String name = sc.nextLine();    // Hello World
+//		String name = sc.next();  // Hello
+//		System.out.println("UR NAME IS " + name);
+
+		System.out.println("Enter integer value");
+		int a = sc.nextInt();
+
+		System.out.println("Enter Double value");
+		double b = sc.nextDouble();
+
+		System.out.println("Enter Byte Value");
+		byte c = sc.nextByte();
+
+		System.out.println("Enter Short value");
+		short d = sc.nextShort();
+
+		System.out.println("Enter Long value");
+		long e = sc.nextLong();
+
+		System.out.println("Enter Char value");
+		char f = sc.next().charAt(0);
+
+		System.out.println("Enter Boolean Value");
+		boolean t = sc.nextBoolean();
+
+		System.out.println("Integer " + a);
+		System.out.println("Double " + b);
+		System.out.println("Byte " + c);
+		System.out.println("Short " + d);
+		System.out.println("Long " + e);
+		System.out.println("Char " + f);
+		System.out.println("Boolean " + t);
+
+	}
+}
+
+
+
+
+
+
+
+

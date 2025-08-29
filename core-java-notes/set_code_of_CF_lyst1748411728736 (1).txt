@@ -1,0 +1,216 @@
+Last Lecture Agenda :
+
+refer this code : 
+
+
+package com.tka;
+
+public class Car {
+
+	String carName;
+	String carClr;
+
+	public Car(String carName, String carClr) {
+		super();
+		this.carName = carName;
+		this.carClr = carClr;
+	}
+
+}
+
+
+
+
+package com.tka;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class CarInfo {
+
+	public static void main(String[] args) {
+
+		ArrayList<Car> list = new ArrayList<Car>();
+		list.add(new Car("Alto", "white"));
+		list.add(new Car("BMW", "black"));
+		list.add(new Car("Alto", "white"));
+		list.add(new Car("swift", "black"));
+
+//		for (Car car : list) {
+//			System.out.println(car.carName + " = " + car.carClr);
+//		}
+
+		Iterator itr = list.iterator();
+		while (itr.hasNext()) {
+			Car c = (Car) itr.next();
+			System.out.println(c.carName + " = " + c.carClr);
+		}
+
+	}
+
+}
+
+
+
+ 
+
+Collection Framework :
+
+
+Set : 
+
+
+1) insertion ordered Not followed : 
+2) index Not maintain :
+3) duplicates elements Not allowed :
+4) searching is Not possible get method :
+
+
+refer this code : 
+
+
+package com.tka;
+
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.ListIterator;
+import java.util.Vector;
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		ArrayList list1 = new ArrayList();
+		list1.add(12);
+		list1.add(14);
+		list1.add(11);
+		list1.add(11);
+		list1.add(19);
+		list1.add(120);
+
+		LinkedList list21 = new LinkedList();
+		list21.add("Ram");
+		list21.add("rahul");
+		list21.add("shyam");
+		list21.add("om");
+		list21.add("Ram");
+		list21.addAll(list1);
+
+		Vector v = new Vector();
+		v.add(12);
+		v.add(14);
+		v.add(11);
+		v.add("Ram");
+		v.add("rahul");
+		v.add("shyam");
+
+//		Enumeration e = v.elements();
+//		while (e.hasMoreElements()) {
+//			System.out.println(e.nextElement());
+//		}
+
+//		Iterator itr = list2.iterator();
+//		while (itr.hasNext()) {
+//			System.out.println(itr.next());
+//		}
+
+//		ListIterator itr =  list21.listIterator();
+//		while(itr.hasNext()) {
+//			System.out.println(itr.next());
+//		}
+
+	}
+
+}
+
+
+
+
+
+
+package com.tka;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.TreeSet;
+
+public class Home {
+
+	public static void main(String[] args) {
+
+//		HashSet set = new HashSet();
+//
+//		set.add("shubham");
+//		set.add(12);
+//		set.add('A');
+//		set.add(true);
+//		set.add(true);
+//		set.add(true);
+//		set.add("shubham");
+//		set.add("shubham");
+//
+//		for (Object c : set) {
+//			System.out.println(c);
+//		}
+
+//		TreeSet set = new TreeSet();
+//		set.add("ram");
+//		set.add("shyam");
+//		set.add("a");
+//		set.add("d");
+//		set.add("b");
+//		set.add("c");
+//		
+//		Iterator itr = set.iterator();
+//		while(itr.hasNext()) {
+//			System.out.println(itr.next());
+//		}
+
+//		TreeSet<String> set = new TreeSet();
+//		set.add("ram");
+//		set.add("shyam");
+//		set.add(true);
+//		set.add(12);
+//		set.add(23.24);         // error 
+//		set.add('&');
+
+//		Iterator itr = set.iterator();
+//		while (itr.hasNext()) {
+//			System.out.println(itr.next());
+//		}
+
+		LinkedHashSet s = new LinkedHashSet();
+		s.add("ram");
+		s.add("shyam");
+		s.add("rahul");
+		s.add("sanket");
+		s.add("anup");
+		s.add("atul");
+
+		for (Object d : s) {
+			System.out.println(d);
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

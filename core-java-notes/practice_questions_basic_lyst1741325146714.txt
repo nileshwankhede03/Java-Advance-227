@@ -1,0 +1,27 @@
+
+Practice Questions :
+
+Write a Java program to add, subtract, multiply, and divide two numbers entered by the user.
+Write a program to find the remainder when one number is divided by another using the modulus (%) operator.
+
+Write a program to calculate the square and cube of a given number.
+Write a Java program to find the area and perimeter of a rectangle using arithmetic operators.
+Write a program to convert temperature from Celsius to Fahrenheit using the formula:
+
+Write a Java program to take two numbers as input and perform addition, subtraction, multiplication, division, and modulus operations.
+Write a Java program to compare two numbers using ==, !=, >, <, >=, and <= and display the results.
+Write a Java program to check whether a person is eligible to vote (age should be 18 or above).
+Write a Java program to find the largest of two numbers using relational operators.
+Write a Java program to check whether a given number is greater than 100 or not using relational operators.
+
+Write a Java program to demonstrate all assignment operators (=, +=, -=, *=, /=, %=).
+Write a Java program where a variable is incremented by 5 using += and then decremented by 3 using -=.
+Write a Java program to take an integer and update it step by step using assignment operators (+=, -=, *=, /=, %=) and display the intermediate results.
+
+
+1043@thekiranacademy.com
+
+
+
+
+

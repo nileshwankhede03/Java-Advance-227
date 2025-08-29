@@ -1,0 +1,92 @@
+Todays Lecture Agenda :
+
+StringBuilder and StringBuffer are in-built classes in java. Both are the final classes in java.
+
+why StringBuilder and StringBuffer are created ?
+- To make String Mutable 
+
+
+In Java, String, StringBuilder, and StringBuffer are used to work with text data.
+Unlike String, both StringBuilder and StringBuffer are mutable, meaning you can modify the contents without creating new objects.
+
+
+synchronized methods - one by one 
+asynchronized methods - all at Once
+
+
+           
+Diff Betn StringBuilder and StringBuffer ?
+
+
+Feature	            String	    StringBuilder	 StringBuffer
+
+Mutability         Immutable          Mutable	           Mutable
+
+Thread Safe	     No	               No	            Yes
+
+Performance        Slow         Fast (single-thread)	Slow (multi-thread safe)
+
+Introduced in	Java 1.0	     Java 1.5	          Java 1.0
+
+
+
+
+Code : 
+
+
+
+package com.tka;
+
+public class Home {
+
+	public static void main(String[] args) {
+
+		String s = "hello";
+		// s // hello
+		// s1 // helloworld
+		String s1 = s.concat("world");   // it will create new String 
+		System.out.println(s);
+		System.out.println(s1);
+		System.out.println(s1 == s);
+
+		StringBuffer sb = new StringBuffer("hello");
+		StringBuffer p = sb.append("world"); // sb = hello            // append method can't create an new String it will update old String
+												// s= helloworld
+		System.out.println(sb.hashCode());
+		System.out.println(p.hashCode());
+		System.out.println(sb);
+		System.out.println(p);
+		System.out.println(sb == p);
+
+	}
+
+}
+
+
+
+
+Methods code : 
+
+
+
+package com.tka;
+
+public class Car {
+
+	public static void main(String[] args) {
+		
+		String str = "hello"; // immutable
+		
+		StringBuilder sb = new StringBuilder(str);   // mutable 
+//		StringBuffer  sb = new StringBuffer(str);   
+		sb.setCharAt(4, 'G');
+		sb.insert(1, "SB"); 
+		sb.delete(1,5);
+		sb.append("World");
+		System.out.println(sb);		
+	}
+}
+
+
+
+

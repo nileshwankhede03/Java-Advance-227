@@ -1,0 +1,140 @@
+Last Lecture Agenda : 
+
+
+1. Type Casting :  int = float, Double 
+
+it has two types :
+ 
+1.Implicit : Directly       int a =60;     float b = a;   System.out.println(b)    Result = 60.0
+2.Explicit : ForceFully     int a =300;    byte c  = (byte) a; System.out.println(b)    Result = 30 
+
+
+
+Operators : 
+
+
+operator  : who can operates   Dr
+Operation : Task / Action      Surgery
+Operands  : perfomed the task  patient
+
+
+
+Types of Operators if we consider as Operations :
+
+1. Arithmetic                   = +,-,*,/,%
+2. Relational / Comparison      = >,<,<=,>=,==,!=
+3. Assignment                   =, +=,-=,*=,/=,%=
+4. Logical
+5. Bitwise
+6. Increment / Decrement
+7. Misc
+
+
+Types of Operators if we consider as Operands :
+
+1. Unary : Operates on single value/variable
+
+2. Binary : Operates on two value/variable
+
+3. Ternary : Operates on three value/variable 
+
+
+Boolean : True/false
+
+
+Logical  : they think and Decide logically. the main purpose of logical operator is to join/connect the conditions. when we used if else conditions  
+
+&&  is and Operator  : 
+
+                System.out.println(true && true);   //  True    
+		System.out.println(true && false);   // false     
+		System.out.println(false && true);   // false
+		System.out.println(false && false);  // false
+
+||  is or Operator :
+    
+
+                System.out.println(true || true);     // true     
+		System.out.println(true || false);    // true
+		System.out.println(false || true);    // true
+		System.out.println(false || false);   // false
+
+
+!   is not Operator :
+                
+	
+		System.out.println(!true);  // false
+		System.out.println(!false); // true
+		
+                
+
+^   is xor Operator  :
+
+                System.out.println(true ^ true);   // false        
+		System.out.println(true ^ false);   // true
+		System.out.println(false ^ true);    // true
+		System.out.println(false ^ false);  // false 
+		
+
+
+Increment = increase 
+Decrement = decrease 
+
+
+++ is increment operator and it increase value by one
+-- is decrement operator and it decrease value by one
+
+pre = before = prior      : ++a
+post = after = later      : a++
+
+
+		int a = 20;
+		
+		++a;   // pre increment
+		a--;   // post decrement
+		a++;   // post increment
+		--a;   // pre decrement
+		
+		
+		System.out.println(--a);
+
+
+
+Bitwise : Bitwise operator is work as Bit Wise(Accordingly) : 
+
+&  is bitwise and. it works with numbers.  /  && is logical and. && works with conditions.
+|   is bitwise or. it works with numbers.  /  || is logical or. or works with conditions.
+
+
+           128  64  32  16  8  4  2  1
+	     
+a = 5       0    0   0   0  0  1  0  1  
+b = 9       0    0   0   0  1  0  0  1
+
+|           0    0   0   0  1  1  0  1
+
+		
+		
+		*/
+		int a =5;
+                int b =9;
+		System.out.println(a | b);  result  : 13
+		
+
+	}
+
+^
+~   = toggle   
+  
+a<<3  = left shift
+a>>3  = right shift
+
+ 
+ 
+ 
+
+
+
+
+
+

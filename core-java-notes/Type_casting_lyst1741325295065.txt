@@ -1,0 +1,47 @@
+Todays Lecture Agenda : 
+
+Naming Conventions : 
+
+Rules 
+1. a-z A-Z 0-9 $ _
+2. Digit not at 1st place 
+3. keywords not allowed
+4. logically meaningful
+
+
+Type Casting is process of converting value of one data type into another data type
+
+it has two types : 
+
+1. Implicit 
+2. Explicit
+
+Implicit type casting : when system converts value of one data type into another data type automatically . developer doesn't need to write extra code for it.
+
+Explicit type casting : when developer converts value of one data type into another data type programmatically . System doesn't do it.
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

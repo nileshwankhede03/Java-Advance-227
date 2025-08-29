@@ -1,0 +1,69 @@
+List & Set : 
+
+Map(I) interface : 
+
+name : "ram"
+key  : values
+
+
+
+Map is a key-value pair based interface in java.util.map package.
+Keys must be unique – duplicate keys are not allowed.
+Values can be duplicated – multiple keys can map to the same value.
+Does not extend Collection interface – it's part of the Java Collections Framework but has its own hierarchy.
+
+                              
+                  
+map{
+insertion order followed by only linkedHashMap in map grp 
+Duplicates not allowed by key but allowed by values
+index is not maintain 
+searching is possible for keys & values but not through index
+}                                                 
+
+                                            
+                                             Map(I)
+
+
+
+
+                 
+  1)HashMap(C)           2)TreeMap(C)             3)LinkedHashMap(C)           4)HashTable(LC)
+                    
+1)extends-AbstractMap(C) 1)extends-AbstractMap(C)  1)extends-HashMap(C)     1)extends-Dictionary(C)
+
+2)Not Synchronized       2)Not Synchronized        2)Not Synchronized       2)Thread Safe class
+
+3)Fast                   3)slower than hashmap     3)slower                  3)All methods are 
+                                                                              synchronized(slower)
+
+4)One null key allowed   4)Sorting possible        4)maintain insertion order 4)Null key not allowed
+                             through keys
+
+5)Multiple null values  5)no null key allowed     5)One null key allowed     5)Null value not allowed
+allowed                        
+             
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

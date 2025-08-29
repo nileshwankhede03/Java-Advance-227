@@ -1,0 +1,47 @@
+Todays Lecture Agenda :
+
+Polymorphisms : 
+
+meaning : 
+
+poly = many 
+Morphism  = forms / versions 
+
+Definition : one entity behaves differently at a different time is called as polymorphisms.
+
+Examples :
+
+Person : student , father , developer .....
+sound  : Bark , Roar ...
+Shapes : circle , rectangle , triangle .... 
+water  : liquid , gas, solid ...
+  
+
+types of polymorphisms : 
+
+1. Compile-Time Polymorphisms (can be achieved by method overloading) / static Binding / early binding
+
+ 
+2. Run-Time Polymorphisms (can be achieved by method overriding) / Dynamic Binding  / Late Binding
+ 
+
+Method Overloading : 
+
+ - same method name 
+ - same class 
+ - with diff args / parameters 
+
+
+Method Overriding : 
+ 
+- same method name
+- different class(inherited)(extends)
+- same args / parameters 
+
+
+
+
+
+
+
+

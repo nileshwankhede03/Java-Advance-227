@@ -1,0 +1,92 @@
+Collection Frameworks : 
+
+A Collection is an object that holds a group of elements (like a container).
+Java Collection Framework (JCF) provides ready-made classes and interfaces to store, retrieve, and manipulate data efficiently.
+
+It is an API which contains predefined classes & interfaces.
+
+Collection(I) : it is an root interface (present in java.util package) of all the collection objects. it contains method like as : add,addall,remove.....
+
+Collections(C) : it is an utility class which contains only static methods.
+
+
+
+
+
+Array : 
+
+int[] num = {2,4,5,7};
+int [] newarr = new int[3];
+newarr[5]=30;
+String[] names = {"ram","rahul", "shyam"};
+
+1) in array contains primitive as well as non-primitive datatype 
+2) the size of array are fixed(homogenous)
+3) it contains only similar types of data at a time 
+4) we cannot increase or decrease the size of an array 
+
+
+
+ArrayList/Collection 
+
+1) arraylist contains non-primitive data types
+2) the size of the array are flexible(heterogenous)
+3) it does not contains similar type of data at time 
+4) we can increase and decrease the size of the array at runtime 
+
+
+                     
+
+
+                                                            Iterable(I) 
+
+list group {                                                                                             set group {                                               
+1) insertion order followed                                                                        1) opposite of list group 
+2) index maintain                                                                                           }
+3) duplicate elements allowed                              Collection(I)                                                         
+4) searching possible 
+(using get method)
+}
+
+                                     
+                                         List(I)                                            Set(I)
+                                                            
+
+
+
+
+
+ 
+                1)ArrayList(C)    2)Vector(LC)      3)LinkedList(C)         1)HashSet(C)      2)TreeSet(C)     3)LinkedHashSet(C)
+               
+              1)same as list      1)same as list    1)same as list          1)same as set      1)same as set     1)same as set                
+
+              2)Not Synchronize   2)Synchronize     2)Not Synchronize       2)Performance      2)sorting         2)order followed
+                                                                              better
+              3)Random Access     3)Random Access   3)Random Access         3)Duplicate        3)Duplicate       3)Duplicate
+                                                      Not Allowed             Not Allowed        Not Allowed       Not Allowed           
+                                                                             
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1)

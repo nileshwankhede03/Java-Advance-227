@@ -1,0 +1,128 @@
+Todays Lecture Agenda :
+
+String : 
+
+
+String carName = "BMW";   Literal 
+
+String carName = new String("BMW");
+
+
+types of Memories :  Stack , Heap , SCP...
+
+In Java, a String is an object that represents a sequence of characters.
+Strings are immutable, which means once created, they cannot be changed.
+A String variable contains a collection of characters surrounded by double quotes: it is also used to stored the words.
+it is also an class present in java.Lang package, it contains lots of methods, also it is an non-primitive data type.
+
+
+String are Immutable : 
+
+Immutable = Unchangeable = constant = Permanent 
+
+String Constant Pool(SCP): 
+The String Constant Pool i.e. SCP is special Type of Memory dedicated to stored only String Values.
+
+
+
+Ways to Create Strings : 
+
+1) Using String literal (stored in String constant pool (SCP))/(without creating object): 
+
+String name = "Shubham";
+
+2) Using new keyword (creates new object in heap)/(creating object):
+
+String name = new String("Shubham");
+
+
+
+
+
+
+
+Memory Management Code : 
+
+
+
+
+
+package com.tka;
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		// Case 1: String literal - stored in String Constant Pool (SCP)
+		String str1 = "hello";
+		String str2 = "hello";
+
+		 // Case 2: Using new keyword - stored in Heap
+		String str3 = new String("hello");
+		String str4 = new String("hello");
+		
+		
+	System.out.println("str1 == str2: " + (str1 == str2)); // true (SCP)
+        System.out.println("str1 == str3: " + (str1 == str3)); // false (SCP vs Heap)
+        System.out.println("str3 == str4: " + (str3 == str4)); // false (different Heap objects)
+
+        
+        // Value comparison using .equals()
+        System.out.println("str1.equals(str3): " + str1.equals(str3)); // true
+
+        
+     // Interning str3 to refer SCP memory
+        String str5 = str3.intern();
+        System.out.println("str1 == str5 (after intern): " + (str1 == str5)); // true
+        
+	}  
+
+}
+
+
+
+
+
+methods in String class : 
+
+
+package com.tka;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		String s = "hello";
+		String s1 = "Hii";
+
+		System.out.println(s.length());
+		System.out.println(s.startsWith("hl"));
+		System.out.println(s.equals(s1));
+		System.out.println(s.charAt(3));
+		System.out.println(s.concat(s1));
+		System.out.println(s.contains("u"));
+		System.out.println(s.toUpperCase());
+		System.out.println(s.toLowerCase());
+		System.out.println(s.trim());
+		System.out.println(s.indent(3));
+		System.out.println(s.strip());
+		System.out.println(s.substring(3));
+
+	}
+
+}
+
+
+
+Tasks :
+
+1) WAP to accept name of the user and count the number of characters in it. 
+2) WAP to accept password of the user and count the number of digits in it. 
+3) WAP to accept email id of the user and check if it has "gmail" or "yahoo" in it. 
+4) WAP to accept full name of the user and print name with initials.
+5) WAP to accept String from the user and count the number vowels and consonants in it. 
+
+
+
+
+
+

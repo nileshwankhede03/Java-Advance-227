@@ -1,0 +1,96 @@
+
+Todays Lecture Agenda : 
+
+Types of Inheritance : 
+
+3. Hierarchical : (A(P) --> B,C,D....) (Son & Daughter(c) -> Father(p))
+
+Definition : one Parent class is inherited by many sub classes
+
+
+refer this code : 
+
+
+package com.inheritance3;
+
+public class Father {
+
+	public void show() {
+		System.out.println("this is method of Father Class");
+	}
+	
+}
+
+
+
+
+package com.inheritance3;
+
+public class Son extends Father {
+
+	public void m2() {
+		System.out.println("m2 method of Son class");
+	}
+
+	public static void main(String[] args) {
+		Son s = new Son();
+		s.m2();
+		s.show();
+//		s.m1(); // Daughter class method cannot called in Son class
+	}
+}
+
+
+
+
+
+package com.inheritance3;
+
+public class Daughter extends Father {
+
+	public void m1() {
+		System.out.println("m1 method of Daughter Class");
+	}
+	
+ public static void main(String[] args) {
+	Daughter d = new Daughter();
+	d.m1();
+	d.show();
+	
+}
+}
+
+
+
+
+4. Hybrid   : Combination of single , multiple , multi-level... (Any) 
+
+
+
+
+
+Associations / HAS-A RelationShip / Composition(Strong) / Aggregation(Weak): 
+
+
+
+an HAS-A relationship is also called as Composition and Aggregation. it represent an relationship between two classes where one class contains an object/Instance of another class.
+
+
+
+Questions of Inheritance : 
+
+
+1.Create a class Animal with a method makeSound(). Inherit it into a Dog class and override the method to print "Dog barks".
+
+2.Create a class Grandfather with method showGrandfather(). Inherit it into Father class with method showFather(), and then into Son class with method showSon(). Call all three methods from Son class object.
+
+3.Write a program where a class Shape is inherited by Circle, Rectangle, and Triangle. Each subclass should have a method to calculate area.
+
+4.Design a Person class inherited by Student and Employee. Print details of both using a common method in base class.
+
+
+
+
+
+
+

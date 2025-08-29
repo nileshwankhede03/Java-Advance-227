@@ -1,0 +1,39 @@
+
+Practice Questions on If-Else : 
+
+
+Write a program to check whether a number is even or odd.
+Write a program to check whether a person is eligible to vote (age >= 18).
+Write a program to find the largest of two numbers.
+Write a program to check whether a character is a vowel or consonant.
+Write a program to check whether a number is positive, negative, or zero.
+
+
+
+Write a program to assign grades to students based on their marks:
+90-100: A
+80-89: B
+70-79: C
+60-69: D
+Below 60: Fail
+
+Write a program to check whether a given year is a leap year or not.
+
+Write a program to classify a person’s age group:
+0-12: Child
+13-19: Teenager
+20-59: Adult
+60 and above: Senior Citizen
+
+Write a program to determine the type of triangle (equilateral, isosceles, or scalene) based on user input sides.
+Write a program to check the eligibility of a student for a scholarship based on marks and income criteria.
+
+
+Write a program to find the largest of three numbers.
+Write a program to determine if a character is an uppercase vowel, lowercase vowel, uppercase consonant, or lowercase consonant.
+Write a program to check if a given number is divisible by both 5 and 11.
+
+Write a program to categorize a person based on gender and age:
+Male, age > 21 → Eligible for marriage
+Female, age > 18 → Eligible for marriage
+Otherwise, not eligible

@@ -1,0 +1,75 @@
+
+Todays Lecture Agenda : 
+
+Switch Case :
+
+
+The switch statement is an alternative to if-else for checking multiple conditions.
+It is used when we need to compare a single expression against multiple constant values.
+It makes code more readable and efficient than multiple if-else statements.
+
+
+syntax : 
+
+int a =7;
+
+ switch(a){
+
+case  1: syso("case 1");break;
+case  2: syso("case 2");break;
+case  3: syso("case 3");break;
+case  4: syso("case 4");break;
+default :
+syso("Invalid Input");
+
+}
+
+
+
+
+Example : 
+
+char ch = 'A';
+
+		switch (ch) {
+
+		case 'a':
+		case 'e':
+		case 'i':
+		case 'o':
+		case 'u':
+		case 'A':
+		case 'E':
+		case 'I':
+		case 'O':
+		case 'U':
+		      System.out.println("Vowels...");
+		      break;
+	    default:
+			  System.out.println("Consonent...");
+		
+		}
+
+
+
+
+
+if else :
+
+Can handle relational ( <, >, <=, >= ), logical (&&,||)
+Works with int, char, float, double, Boolean, String, etc.
+Can handle complex conditions with multiple expressions.
+
+
+Switch case :
+
+
+Works with int, char, byte, short, String.
+Handles simpler cases, usually for constant values.
+Best when checking a variable against fixed values.
+
+
+
+
+
+

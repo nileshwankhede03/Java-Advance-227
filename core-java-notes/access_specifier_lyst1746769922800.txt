@@ -1,0 +1,86 @@
+
+
+Todays Lecture Agenda : 
+
+
+Access Specifier/Access Modifier  : 
+
+Access Specifiers (also known as Access Modifiers) in Java define the visibility/scope of classes, methods, and variables to other parts of the code.
+
+there are Four types : 
+
+Public , private , default , protected : 
+
+
+
+1) Public :
+
+Accessible from anywhere (within class, outside class, other packages).
+
+2) Private : 
+
+Accessible only within the same class.
+
+3) default : 
+
+If you don't write any access specifier, it's an(default).
+Accessible only within the same package.
+
+4) Protected : 
+
+Accessible within the same package and by subclasses in other packages.
+
+
+where we can apply access specifier : 
+
+
+Outer Class = public , default
+
+Inner class = public, private, protected, default 
+Constructor = public, private, protected, default
+Global/Instance Variables = public, private, protected, default
+Method =  public, private, protected, default
+
+
+
+
+
+Protected Code : 
+
+access by subclasses : 
+
+package com.package1;
+
+public class Person {
+
+	protected String Name;
+
+	protected void showName() {
+		System.out.println("Name " + Name);
+	}
+
+}
+
+
+
+package com.package2;
+
+import com.package1.Person;
+
+public class Test extends Person {
+
+	public static void main(String[] args) {
+		Test t = new Test();
+		t.showName();   
+	}
+
+}
+
+
+
+
+
+
+
+
+

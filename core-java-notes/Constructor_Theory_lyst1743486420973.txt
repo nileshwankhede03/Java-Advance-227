@@ -1,0 +1,76 @@
+Constructor Theory : 
+
+Constructor is an special type of method but does not have any return type (not even void)
+suppose if we provide any return type to the constructor then it will become method
+Constructor have the same name as class name because when we create an object of the class Constructor will get automatically called. or(constructor have the information of the whole class)
+suppose we can't declared any constructor in our program then system(compiler) will provide the default constructor 
+suppose we write any constructor then system will not provide any constructor.
+Imp of Constructor : suppose if you want to execute anything before an method then that code write inside the Constructor
+we can write multiple constructor in single class
+Constructor cannot be static 
+we can give any access specifier to the Constructor 
+
+there are two types of Constructor :
+
+1. Argument / Parameterised 
+2. No-Argument / Non-Parameterised
+
+
+
+
+refer these code : 
+
+
+package com.tka;
+
+public class Employee 
+{
+
+//	access specifier / className Car(){
+//
+//	}
+	
+	 static {
+		System.out.println("These is Static-Block");
+	}
+	
+    {	
+		System.out.println("These is Non-Static Block");
+	}
+	
+
+	public Employee() {
+		System.out.println("These is Constructor...");
+	}
+	
+	public void m1() {
+		System.out.println("These is Method...");
+	}
+
+	public static void main(String[] args) {
+		Employee e = new Employee();
+		e.m1();
+	}
+
+}
+
+
+Output : 
+
+These is Static-Block
+These is Non-Static Block
+These is Constructor...
+These is Method...
+
+
+
+
+
+
+
+ 
+
+
+
+
+  

@@ -1,0 +1,111 @@
+Todays Lecture Agenda : 
+
+Final & Static Keyword : 
+
+Access Modifier/Specifier = Public , private , protected , Default
+
+Non-Access Modifier :
+
+Final : 
+
+In Java, the final keyword is used to denote constants. It can be used with variables, methods, and classes.
+Once any entity (variable, method or class) is declared final, it can be assigned only once. That is,
+
+the final variable cannot be reinitialized with another value
+the final method cannot be overridden
+the final class cannot be extended
+
+we can make this things as final : 
+
+variables 
+methods 
+classes 
+
+we can't make this things as final :
+
+Constructor 
+interfaces / abstract classes
+non static block 
+static block
+
+
+
+Static : 
+
+Static is an keyword in java or it is an non access specifier/modifier
+it is single copy storage
+it will goes into an memory only once times 
+static goes in memory before object is created.
+static keywords are used for memory management 
+we can call static things by two ways by using 
+   1) Class/Interface name
+   2) Object creations
+
+where we can apply static keyword : 
+
+1) global variable / instance variable 
+2) method 
+3) Block or inner class
+
+
+Non-Static things : 
+
+class/interface/abstract class 
+local variable 
+constructor
+
+
+why main method is static ?
+-> if an main method is not declared as static then JVM has to create an object first and then call which causes the problem of having an extra memory Allocation. because of this one we can  make the main method as static.    
+
+ 
+
+
+refer this code : 
+
+
+package com.tp;
+
+public class Employee {
+
+	public int empId;
+	public String empName;
+	public static String cName = "TCS";
+
+	Employee(int empId, String empName) {
+		this.empId = empId;
+		this.empName = empName;
+	}
+
+	public void display() {
+		System.out.println(empId + " " + empName + " " + cName);
+	}
+
+}
+
+
+
+
+
+
+
+
+package com.tp;
+
+public class EmpDetails {
+
+	public static void main(String[] args) {
+		Employee e = new Employee(1221, "om");
+		e.display();
+		Employee e1 = new Employee(1331, "om");
+		e1.display();
+		Employee e2 = new Employee(1421, "rahul");
+		e2.display();
+	}
+
+}
+
+
+
+
+

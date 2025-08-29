@@ -1,0 +1,179 @@
+Last Lecture Agenda :
+
+
+syntax : 
+
+Scanner sc = new Scanner(System.in);
+
+primitive Data types : 
+
+int :  nextInt();
+byte : nextByte();
+short : nextShort();
+Long : nextLong();
+Float : nextFloat();
+Double : nextDouble();
+Boolean : nextBoolean();
+
+char : next().charAt(0);
+
+
+Non- primitive Data Type : 
+
+String : next() , nextLine()
+
+
+Todays Lecture Agenda : 
+
+
+code : 
+
+
+public class Car {
+
+	public Car(){
+		System.out.println("com.jbk.Car");
+	}
+	
+}
+
+
+
+package com.tka;
+
+public class Car {
+
+	public Car(){
+		System.out.println("com.tka.Car");
+	}
+	
+}
+
+
+
+package com.demo;
+
+import com.jbk.Car;
+
+public class CarObject {
+
+	public static void main(String[] args) {
+		Car c = new Car();
+		com.tka.Car c1 = new com.tka.Car(); 
+	}
+	
+}
+
+
+
+
+
+
+
+
+Student Grade System Project : 
+
+package com.demo;
+
+public class Student {
+
+	int studID;
+	String studName;
+	String course;
+	double Percentage;
+
+	public Student(int studID, String studName, String course, double Percentage) {
+		this.studID = studID;
+		this.studName = studName;
+		this.course = course;
+		this.Percentage = Percentage;
+	}
+	
+	public void studentDetails(){
+		System.out.println("Student ID = "+studID);
+		System.out.println("Student Name = "+studName);
+		System.out.println("Student course = "+course);
+		System.out.println("Student Percentage = "+Percentage);
+		System.out.println("Student Grade = "+ calculateGrade());
+
+	}
+	
+  public String	calculateGrade(){
+		if(Percentage <= 100 && Percentage >= 90) {
+			return "A";
+		}else if(Percentage <= 89 && Percentage >= 80) {
+			return "B";
+		}else if(Percentage <= 79 && Percentage >= 70) {
+			return "C";
+		}else if(Percentage <= 69 && Percentage >= 60){
+			return "D";
+		}else if(Percentage <= 59 && Percentage >= 50) {
+			return "E";
+		}else {
+			return "F";
+		}
+	}
+
+}
+
+
+
+
+StudentInfo class code : 
+
+
+package com.demo;
+
+import java.util.Scanner;
+
+public class StudentInfo {
+
+	public static void main(String args[]) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter ur Roll NO ");
+
+		int rollno = sc.nextInt();
+		sc.nextLine();
+
+		System.out.println("Enter ur Name ");
+		String Name = sc.nextLine();
+
+		System.out.println("Enter ur Course ");
+		String course = sc.nextLine();
+
+		System.out.println("Enter ur Percentage ");
+		double percentage = sc.nextDouble();
+
+		Student s = new Student(rollno, Name, course, percentage);
+		s.studentDetails();
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

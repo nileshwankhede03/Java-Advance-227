@@ -1,0 +1,42 @@
+Todays Lecture Agenda : 
+
+Synchronization :
+
+Synchronization is the process by which we can control the accessibility of multiple threads to a particular shared resource
+we can achieved synchronization by using synchronized keyword.
+
+simple def : it allows only one thread at a particular time to complete a given task entirely.
+
+
+
+
+synchronized      --->     one by one 
+non-synchronized  --->     all at once 
+
+
+
+public synchronized void m1(){
+
+}
+
+
+public void m2(){
+
+}
+
+
+
+Structure of project : 
+
+class Office --> main method object creation
+
+class Nilesh -> (92.1)
+
+class Gaurav ->(108.2)
+
+class Mansi -> (94.3)
+
+class Radio --> synchronized play(float freq){}
+
+
+ 

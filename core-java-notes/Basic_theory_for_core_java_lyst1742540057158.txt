@@ -1,0 +1,171 @@
+Comments in java :
+
+comments can be used to explain the java code, and to make it more readable , it can be also used to prevent execution when testing alternative code 
+there are two types of comments 
+
+1. Single line Comments 
+
+// System.out.println("");
+
+2. Multi-line Comments 
+
+/* 
+System.out.println("");
+System.out.println("");
+System.out.println("");
+
+*/
+
+
+Variables in java : 
+
+A variable is a type of container which holds the value while the java program is executed, a variable is assign with data types.
+it is a combination of vary-able that means its value can be changed.
+
+there are three types of variable :
+1. Local 
+2. Global / instance
+
+Local  : A variable declared inside the body of method is called as local variables.
+
+Global : A variable declared inside the class but outside the body of the method is called as global variables.
+
+
+Java Identifiers : 
+
+All java variables/classes/methods must be identified with unique names. these unique name are called as identifier.
+
+
+Data - Types : 
+
+Data types specify the different size and value that can be stored in the form of variable. 
+there are two types of data types in java.
+1. Primitive Data types     : byte,short,int,long,float,double,char,boolean 
+2. Non-Primitive Data types : String , Arrays, Class, Interface etc..
+
+
+
+Class : 
+
+Class is collection of methods , Variables etc. it is blue print of object , it is logical entity , we can write it before method and after the package statement.
+
+
+
+Operators : 
+
+Operators are used to perform operation on variables and values.
+
+Types of Operators if we consider as Operands :
+
+1. Unary : Operates on single value/variable
+2. Binary : Operates on two value/variable
+3. Ternary : Operates on three value/variable 
+
+
+types of operators are as follows : 
+
+Arithmetic       :     +,-,*,/,%
+Assignment       :     =, +=,-=,/=,%= , *=  
+Relational/ Comparison :    >,<,>=,<=,==,!=
+Logical :              &&, || , ^, !         
+Bitwise :              & , | , >>, << , ~ , ^ 
+Increment :            ++
+Decrement :            --
+
+
+Main method : is the starting point of java program execution. when the java program executed the JVM start by calling the main method
+
+
+Type Casting is process of converting value of one data type into another data type.
+it has two types : 
+
+1. Implicit 
+2. Explicit
+
+Implicit type casting : when system converts value of one data type into another data type automatically . developer doesn't need to write extra code for it.
+Explicit type casting : when developer converts value of one data type into another data type programmatically . System doesn't do it.
+
+
+JDK : java Development Kit : (includes tools fore developing java application).
+JRE : Java Run-Time Environment : (provides the runt-time environment for executing java program)
+JVM : Java Virtual Machine : (is responsible for executing java bytecode)
+JIT :Just In Time : (JIT compile specific changed program line to save time, because of the JIT we can say that java is high performance language).
+
+
+ClassLoader : A Classloader is subsystem of JVM. dedicated to loading a class file. when a program is executed. 
+
+
+Source Code : Source code is created by the Programmer. 
+Byte Code   : Byte code in java is a set of Instructions for the JVM (Byte code is platform Independent)
+Machine Code: Machine code is set of the instructions in machine language.
+
+
+Compiler : 
+compiler scan the entire program in one go.
+compiler converts the source code to the byte code 
+
+Interpreter : 
+Interpreter scan the program one line at a time 
+interpreter helps to convert the byte code in machine code.
+
+
+Concatenation :
+the + operator can be used between string to combined them. this is called as concatenations 
+
+
+Keywords : 
+
+java keywords are also known as reserved words, keywords are particular words that act as key to a code, these are the predefined words by java, so they cannot be used as variables or methods or objects or class name. 
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

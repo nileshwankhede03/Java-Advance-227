@@ -1,0 +1,258 @@
+Refer this code : 
+
+for Login Application Project through the Interface : 
+
+
+
+
+package com.abstraction2;
+
+public interface Login {
+
+	public abstract boolean authenticate(String username,String password);
+	
+}
+
+
+
+
+
+
+
+
+package com.abstraction2;
+
+public class Admin implements Login {
+
+	@Override
+	public boolean authenticate(String username, String password) {
+		if (username.equals("Ram") && password.equals("Ram@123")) {
+			System.out.println("Successfully Login");
+			return true;
+		} else {
+			System.out.println("Invalid Credentials");
+			return false;
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+package com.abstraction2;
+
+public class User implements Login {
+
+	@Override
+	public boolean authenticate(String username, String password) {
+		if (username.equals("shyam") && password.equals("shyam@123")) {
+			System.out.println("Successfully Login");
+			return true;
+		} else {
+			System.out.println("Invalid Credentials");
+			return false;
+		}
+	}	
+}
+
+
+
+
+
+
+
+
+
+package com.abstraction2;
+
+public class LoginDashboard {
+
+	public static void main(String[] args) {
+		System.out.println("ADMIN PORTAL");
+		Admin a = new Admin();
+		a.authenticate("Ram", "Ram@123");
+		
+		System.out.println("---------------------");
+		
+		System.out.println("USER PORTAL");
+		User u = new User();
+		u.authenticate("om", "om@123");
+	}
+}
+
+
+
+
+
+
+
+
+
+2. Multiple Inheritance Through the Interface : 
+
+
+
+
+
+
+
+package com.ab3;
+
+public interface Father {
+
+	public abstract void bike();
+	
+}
+
+
+
+
+
+package com.ab3;
+
+public interface Mother {
+
+	public abstract void cooking();
+	
+}
+
+
+
+
+
+
+
+package com.ab3;
+
+public class Son implements Father,Mother {
+
+	@Override
+	public void cooking() {
+		System.out.println("Mother interface method");
+		
+	}
+
+	@Override
+	public void bike() {
+		System.out.println("Father interface method");
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		Son s = new Son();
+		s.bike();
+		s.cooking();
+	}	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+3.For Variables Code (INTERFACE VARIABLE ALWAYAS PUBLIC STATIC FINAL) : 
+
+
+
+
+package com.abstraction;
+
+public interface Bank {
+
+	public static final double sbiInterest = 6.7;
+	double HdfcInterest = 9.0;
+
+	public abstract void intrestRate();
+	
+
+}
+
+
+
+
+
+
+
+package com.abstraction;
+
+public class HdfcBank implements Bank {
+
+	@Override
+	public void intrestRate() {
+
+   // IMP NOTE : BY USING THE CLASS NAME OR INTERFACE NAME WE CAN CALL STATIC THINGS 
+
+		
+		System.out.println("HDFC INTEREST RATE IS = "+Bank.HdfcInterest);
+	}
+
+}
+
+
+
+
+
+
+package com.abstraction;
+
+public class SbiBank implements Bank {
+
+	@Override
+	public void intrestRate() {
+		System.out.println("SBI INTERST RATE IS = " + Bank.sbiInterest);
+	}            
+
+}
+
+
+
+
+
+
+package com.abstraction;
+
+public class MainClass {
+	
+public static void main(String[] args) {
+	SbiBank sb = new SbiBank();
+	sb.intrestRate();
+	System.out.println("------------------------");
+	HdfcBank hb = new HdfcBank();
+	hb.intrestRate();
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

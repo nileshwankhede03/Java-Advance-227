@@ -1,0 +1,113 @@
+
+Thread class methods : 
+
+
+Method	Description
+start()	Starts a new thread of execution.
+run()	Defines the code executed by the thread. Usually overridden.
+sleep(long millis)	Pauses the current thread for the specified time (in milliseconds).
+join()	Waits for this thread to die (complete execution).
+join(long millis)	Waits at most the given time for this thread to die.
+setName(String name)	Sets the name of the thread.
+getName()	Returns the name of the thread.
+setPriority(int priority)	Sets the priority of the thread (1 to 10).
+getPriority()	Returns the thread's priority.
+isAlive()	Returns true if the thread is alive (started and not yet dead).
+isDaemon()	Checks if the thread is a daemon thread.
+setDaemon(boolean on)	Marks the thread as a daemon thread.
+interrupt()	Interrupts the thread if it's in sleep or waiting state.
+isInterrupted()	Checks if the thread has been interrupted.
+currentThread() (static)	Returns a reference to the currently executing thread.
+yield() (static)	Hints to the thread scheduler to pause and allow other threads to execute.
+
+
+how to used this methods refer this code : 
+
+
+
+
+
+
+public class MyThread extends Thread {
+
+    public void run() {
+        System.out.println(Thread.currentThread().getName() + " is running");
+
+        try {
+            // sleep() - static
+            Thread.sleep(500);
+
+            // Check if interrupted
+            if (Thread.interrupted()) {
+                System.out.println(Thread.currentThread().getName() + " was interrupted");
+            } else {
+                System.out.println(Thread.currentThread().getName() + " was not interrupted");
+            }
+
+        } catch (InterruptedException e) {
+            System.out.println(Thread.currentThread().getName() + " caught InterruptedException");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+public class ThreadMethodsDemo {
+
+    public static void main(String[] args) {
+
+        // Create threads
+        MyThread t1 = new MyThread();
+        MyThread t2 = new MyThread();
+
+        // setName(), getName()
+        t1.setName("Thread-One");
+        t2.setName("Thread-Two");
+
+        // setPriority(), getPriority()
+        t1.setPriority(Thread.MIN_PRIORITY);  // 1
+        t2.setPriority(Thread.MAX_PRIORITY);  // 10
+
+        // setDaemon()
+        t2.setDaemon(true); // Set t2 as daemon before starting
+
+        // Start threads
+        t1.start();
+        t2.start();
+
+        // isAlive()
+        System.out.println(t1.getName() + " is alive? " + t1.isAlive());
+        System.out.println(t2.getName() + " is alive? " + t2.isAlive());
+
+        // Join threads
+        try {
+            t1.join(); // Wait for t1 to finish
+            t2.join(); // Wait for t2 to finish
+        } catch (InterruptedException e) {
+            System.out.println("Main thread interrupted");
+        }
+
+        // currentThread(), getName(), getPriority()
+        Thread mainThread = Thread.currentThread();
+        System.out.println("Current thread: " + mainThread.getName());
+        System.out.println("Main thread priority: " + mainThread.getPriority());
+
+        // yield() - static
+        Thread.yield();
+
+        // interrupt(), isInterrupted()
+        MyThread t3 = new MyThread();
+        t3.setName("Thread-Three");
+        t3.start();
+        t3.interrupt(); // Interrupt t3
+        System.out.println(t3.getName() + " is interrupted? " + t3.isInterrupted());
+
+        System.out.println("All thread operations completed.");
+    }
+}

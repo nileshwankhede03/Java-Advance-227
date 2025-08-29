@@ -1,0 +1,118 @@
+
+
+1) HashTable : 
+
+package com.mappractise;
+
+import java.util.Hashtable;
+import java.util.Map.Entry;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		
+		Hashtable<Integer , String> map = new Hashtable<Integer, String>();
+		map.put(1,"A");
+		map.put(3,"B");
+		map.put(2,"D");
+		map.put(4,"C");
+		map.put(5,"A");
+//		map.put(null,"A");
+//		map.put(6,null);
+		
+		
+		
+//		for (Entry<Integer, String> s: map.entrySet()) {
+//			System.out.println( s.getKey()+ " = "+s.getValue());
+//		}
+		
+//		for (Integer i : map.keySet()) {
+//			System.out.println(i);
+//		}
+		
+//		for (String  s: map.values()) {
+//			System.out.println(s);
+//		}
+			
+//		System.out.println(map);
+		
+	}
+	
+}
+
+
+
+LinkedHashMap : 
+
+public class Demo {
+
+	public static void main(String[] args) {
+		
+	 LinkedHashMap<Integer , String> map = new LinkedHashMap<Integer, String>();
+		map.put(1,"A");
+		map.put(3,"B");
+		map.put(2,"D");
+		map.put(4,"C");
+		map.put(5,"A");
+		
+		map.put(null,"A");
+		map.put(6,null);
+		map.put(7,null);
+		
+		
+		
+		for (Entry<Integer, String> s: map.entrySet()) {
+			System.out.println( s.getKey()+ " = "+s.getValue());
+		}
+
+
+
+
+TreeMap : 
+
+
+public static void main(String[] args) {
+		
+	 TreeMap<Integer , String> map = new TreeMap<Integer, String>();
+		map.put(1,"A");
+		map.put(3,"B");
+		map.put(2,"D");
+		map.put(4,"C");
+		map.put(5,"A");
+		
+		map.put(8,"A");
+		map.put(6,null);
+		map.put(7,null);
+		
+		
+		
+		for (Entry<Integer, String> s: map.entrySet()) {
+			System.out.println( s.getKey()+ " = "+s.getValue());
+		}
+
+
+
+
+HashMap : HW : 
+
+
+
+
+Enumeration : (LC): iterate : 
+
+refer this code : 
+
+
+Enumeration<Integer> e = map.keys();
+		while(e.hasMoreElements()) {
+			Integer keys = e.nextElement();
+			System.out.println(keys+" "+map.get(keys));
+		}
+
+
+
+
+
+
+
+

@@ -1,0 +1,107 @@
+Last Lecture Agenda : 
+
+Variables : variable is type of container that stores the value in the form of Data Type. 
+variable can be reassign. 
+
+Data Types :
+
+Primitive(8)  & Non - Primitive 
+
+1 byte = 8 bits
+
+byte     = 1byte     age  23
+short    = 2 byte    mobrecharge 599
+int      = 4 byte    batchcode 1043 
+long     = 8 byte    mob no 3456789876L
+float    = 4 byte    % 99.99f
+double   = 8 byte    salary 95000
+char     = 2 byte    Gender M/F
+Boolean  = 1 bit     true/false 
+
+Non - Primitive
+
+String PanCardNo = "AUFH2435”;
+
+System.out.println(PanCardNo);
+
+
+Todays Lecture Agenda :
+
+Types Variable declaration :
+
+
+how to create Project in eclipse :
+
+Project create = java project   = VehicleInfo
+
+JRE (java runtime Environment) = 17,22,23... 
+
+src
+
+class  = Car
+
+
+
+public class Car {
+
+
+(main method) 
+
+public static void main(String args[]) {
+
+int myVariable = 40;
+int MyVaraible = 40;
+
+
+
+int a=20,b=20,c=30,d=80,e=30;
+
+ int s = a+b;
+
+
+System.out.println(s);
+
+
+
+}
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

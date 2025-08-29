@@ -1,0 +1,156 @@
+Todays Lecture Agenda :
+
+Exception Handling : Day 1 : 
+
+Exception : an Exception is an unwanted event which occurs during the Execution of a program. i.e. Runtime 
+that disturb the normal flow of the Execution.
+An event that disturbs the normal flow of the program.
+ 
+Exception Handling : 
+Exception Handling in Java is a powerful mechanism that handles runtime errors to maintain the normal flow of the application. It helps prevent the program from crashing when an unexpected situation occurs.
+
+note : there are so many in-built classes of Exception 
+
+how we can handle the Exception : 
+to handle the Exception in java by using try , catch , finally block and throws & throw keywords.
+
+try - write an code in which line Exception will occurred
+catch - write an type of Exception & one msg for user
+finally - it will always executed (mostly it is used for close the connection).
+
+ 
+
+there are Two types Exception : 
+
+
+1) Runtime Exception :  Unchecked Exception : ArithematicExeption , NullPointer..., ArrayIndexOutOfBound.....   
+2) Compile time Exception : checked Exception  : ClassNotFoundException
+
+
+Code for References : 
+
+
+
+
+
+package com.exceptionpractise;
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+//		// Runtime Exception
+//		
+		System.out.println(4 / 2);
+		System.out.println(8 / 2);
+
+		try {
+			System.out.println(2 / 0);
+		} catch (Exception e) {
+//			e.printStackTrace();
+			System.out.println("Exception in this line  " + e.getMessage());
+		} finally {
+			System.out.println("this is finally block");
+		}
+//
+//		System.out.println(14 / 2);
+//		System.out.println(14 / 2);
+//
+//	}
+
+//		try {
+//		int arr[] = new int[40];  
+//		arr[41] = 30;
+//		}catch(ArrayIndexOutOfBoundsException e) {
+//			System.out.println("this is not possible ");
+//		}
+
+//		String s =null;
+//		try {
+//		System.out.println(s.length());
+//		}catch(NullPointerException e) {
+//			System.out.println(e.getMessage());
+//		}
+//	}
+	}
+}
+
+
+
+ 
+
+
+package com.exceptionpractise;
+
+public class Demo2 {
+
+	
+	// Compiled Time Exception
+	
+	public static void main(String[] args) {
+		
+			try {
+				Class.forName("java.lang.String");
+			} catch (ClassNotFoundException e) {
+			
+			}
+	}
+	
+}
+
+
+
+
+
+
+
+Practice Questions : 
+
+
+
+Write a Java program that takes two numbers from the user and divides them. Handle the exception if the second number is zero using try-catch-finally.
+
+🔹 Expected: Catch ArithmeticException, and print a message like “Cannot divide by zero”.
+
+
+
+Write a Java program that creates an array of 5 elements and tries to access the 10th element. Use try-catch-finally to handle any exception.
+
+🔹 Expected: Catch ArrayIndexOutOfBoundsException.
+
+
+
+
+Write a program where you initialize a String to null and try to call .length() on it. Handle the exception using a try-catch-finally block.
+
+🔹 Expected: Catch NullPointerException.
+
+
+Write a program that converts a string (e.g., "abc123") to an integer using Integer.parseInt(). Handle any exception that may occur.
+
+🔹 Catch NumberFormatException and print “Invalid number format”.
+
+
+
+Accept integer input from the user using Scanner. If the user enters a string instead of a number, handle it using try-catch.
+
+🔹 Catch InputMismatchException.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

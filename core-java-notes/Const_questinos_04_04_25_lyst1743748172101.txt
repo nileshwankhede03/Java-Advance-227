@@ -1,0 +1,27 @@
+
+Practice Questions Combination of Method, Constructor, Instance variables : 
+
+1. Define a Student class with attributes: studentId, studentName, course, year, percentage.
+   Implement a method to display student details.
+   Implement a method to calculate the student's grade based on the percentage.
+   Create a Main class to test the functionality.
+
+2. Define a BankAccount class with attributes: accountNumber, accountHolder, balance.
+   Implement methods for deposit, withdraw, and displayAccountDetails.
+   Ensure that withdrawal does not allow balance to go negative.
+   Create a Main class to test various transactions.
+
+3. Define an Employee class with attributes: empId, empName, designation, salary.
+   Implement a method to display employee details.
+   Implement a method to calculate bonus (10% of salary if salary < 50,000, otherwise 5%).
+   Create a Main class to test the logic.
+
+4. Define a Product class with attributes: productId, productName, price, stock.
+   Implement methods for purchaseProduct (reduce stock), addStock, and displayProductDetails.
+   Ensure stock does not go negative.
+   Create a Main class to demonstrate the working.
+
+5. Define a Book class with attributes: bookId, title, author, price, availableCopies.
+   Implement methods for issueBook, returnBook, and displayBookDetails.
+   Ensure issued books do not exceed available copies.
+   Create a Main class to test the scenario.

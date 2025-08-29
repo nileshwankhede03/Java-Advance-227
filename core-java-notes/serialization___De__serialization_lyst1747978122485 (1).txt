@@ -1,0 +1,102 @@
+Todays Lecture Agenda : 
+
+
+Serialization    : Saving object into file/insert 
+De-serialization : Reading object from file/fetch record
+
+
+
+Classes Involved in Serialization & De-serialization  : 
+
+FileOutputStream   -> this class is capable of Writing data into the file.
+ObjectOutputStream -> this class is capable of writing object
+
+FileInputStream  -> this class is capable of reading data from the file. 
+ObjectInputStream  -> this class is capable of reading object
+
+
+refer this code : 
+
+
+
+package com.serialization;
+
+import java.io.Serializable;
+
+public class Bird implements Serializable {
+
+	public String name;
+	public String color;
+	public transient int age;
+}
+
+
+
+
+package com.serialization;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+
+public class Demo {
+
+	public static void main(String[] args) throws Exception {
+		
+		
+		// Serialization process   write operation // insert operation  
+		
+		Bird b = new Bird();
+		
+		b.name="parrot";
+		b.color="green";
+		b.age=5;
+
+		FileOutputStream f = new FileOutputStream("D:\\data.txt");
+		ObjectOutputStream o = new ObjectOutputStream(f);
+		
+		o.writeObject(b);
+		
+		System.out.println("Object Serialized...!");
+		
+		
+		
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+package com.serialization;
+
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+
+public class Home {
+
+	
+	// De-serialization process  // read data / get data / fetch data
+	
+	public static void main(String[] args) throws Exception {
+		
+		FileInputStream f = new FileInputStream("D:\\data.txt");
+		ObjectInputStream o = new ObjectInputStream(f);	
+		
+		Bird b = (Bird) o.readObject();   // type Casting 
+		
+		System.out.println(b.name);
+		System.out.println(b.color);
+		System.out.println(b.age);
+		
+	}
+	
+}
+
+
+
+

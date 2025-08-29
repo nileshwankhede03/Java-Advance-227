@@ -1,0 +1,40 @@
+Last Lecture Agenda : 
+
+Final & Static : 
+
+Todays Lecture Agenda :
+
+This Keyword : 
+
+this is an keyword in java.
+this keyword is also called as current class object 
+it is an exactly replacement of object creations
+it is also called as reference variable  
+this keyword is reference variable that refers to the current class objects
+Cannot be used in a static context. 
+
+where we can apply this keyword : 
+
+1) Global Variables 
+2) Constructor 
+3) Method
+
+Note : Rule is for Constructor : this() must be at first line in the Constructor.
+
+	
+Super Keyword : 
+
+super is an keyword in java. 
+it is also called as reference variable
+it is an exactly replacement of object creations which is used to refer parent class object 
+Cannot be used in a static context.
+
+where we can apply super keyword : 
+
+1) Global Variables 
+2) Constructor 
+3) Method
+
+Note : Rule is for Constructor : super() must be at first line in the Constructor.
+
+

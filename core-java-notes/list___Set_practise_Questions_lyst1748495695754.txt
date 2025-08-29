@@ -1,0 +1,57 @@
+list & Set practise Questions : 
+
+1)Add & Display List:
+
+Create a List of integers.
+
+Add 10 numbers and display them using a loop.
+
+2)Remove Duplicates:
+
+Write a Java program to remove duplicate elements from a List using a Set.
+
+3)Sort List Alphabetically:
+
+Create a List of 5 country names and sort them alphabetically.
+
+4)Use LinkedList:
+
+Use LinkedList to add 5 city names.
+
+Add an element at the beginning and at the end.
+
+5)Set Uniqueness Test:
+
+Create a HashSet of 5 integers.
+
+Try adding duplicate values and observe the result.
+
+6)Convert List to Set:
+
+Convert a List of names to a Set to remove duplicates.
+
+Print the original and the converted collections.
+
+7)Use TreeSet:
+
+Store random integers in a TreeSet.
+
+Display them in ascending order.
+
+8)Iterate Set:
+
+Create a Set of strings.
+
+Use an Iterator to display all the elements.
+
+9)Find Frequency:
+
+Given a List of integers, find the frequency of each number using a Set and Collections.frequency().
+
+10)Sort Custom Objects:
+
+Create a class Employee with id, name, and salary.
+
+Store multiple objects in a List.
+
+Sort by salary in ascending order.
