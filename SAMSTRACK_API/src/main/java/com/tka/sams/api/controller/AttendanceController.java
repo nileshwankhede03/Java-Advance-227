@@ -40,19 +40,22 @@ public class AttendanceController {
 	private StudentService studentService;
 
 	@GetMapping("/get-all-attendance-records")
-	public List<AttendanceRecord> getAllAttendanceRecords() {
+	public List<AttendanceRecord> getAllAttendanceRecords() 
+	{
 		return attendanceRecordService.getAllAttendanceRecords();
 	}
 	
 	@GetMapping("/get-attendance-by-date-subjet/{date}/{subjectId}")
-	public List<AttendanceRecord> getAllAttendanceRecords(@PathVariable String date,@PathVariable long subjectId){
+	public List<AttendanceRecord> getAllAttendanceRecords(@PathVariable String date,@PathVariable long subjectId)
+	{
 
 		return attendanceRecordService.getAllAttendanceRecords(date,subjectId);
 		
 	}
 
 	@PostMapping("/take-attendance")
-	public AttendanceRecord createAttendanceRecord(@RequestBody AttendanceRecordRequest request) {
+	public AttendanceRecord createAttendanceRecord(@RequestBody AttendanceRecordRequest request) 
+	{
 		User user = userService.getUserByName(request.getUsername());
 		Subject subject = subjectService.getSubjectById(request.getSubjectId());
 		List<Student> students = studentService.getAllStudentsById(request.getStudentIds());
